@@ -12,15 +12,15 @@ export function Skills() {
   const skillCategories = [
     {
       title: t.skills.categories.frontend,
-      skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "HTML5", "CSS3", "JavaScript"],
+      skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "JavaScript"],
     },
     {
       title: t.skills.categories.backend,
-      skills: ["Node.js", "Express", "Python", "REST APIs", "GraphQL", "PostgreSQL", "MongoDB"],
+      skills: ["Node.js", "Express", "REST APIs", "SQL", "PostgreSQL", "MongoDB"],
     },
     {
       title: t.skills.categories.devops,
-      skills: ["Git", "Docker", "AWS", "Vercel", "CI/CD", "Linux", "Webpack"],
+      skills: ["Git", "Docker", "AWS", "Vercel", "CI/CD", "Webpack"],
     },
     {
       title: t.skills.categories.services,

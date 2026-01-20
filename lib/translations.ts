@@ -18,7 +18,7 @@ export const translations = {
     },
     about: {
       title: "About Me",
-      subtitle: "A passionate full-stack developer with 2+ years of experience building modern web applications",
+      subtitle: "Proactive full-stack developer focused on creating scalable, user-centric web applications. Specialized in front-end development with a mobile and responsive approach, with the ability to integrate APIs and work with databases. I excel at applying logic and automation to improve processes and optimize functionality, and I adapt easily to collaborative environments where teamwork is essential.",
       features: {
         cleanCode: {
           title: "Clean Code",
@@ -33,8 +33,8 @@ export const translations = {
           description: "Strong communication skills and experience working in cross-functional teams",
         },
       },
-      bio1: "I'm a dedicated full-stack developer who loves turning complex problems into simple, beautiful, and intuitive solutions. With expertise in modern JavaScript frameworks and cloud technologies, I help businesses build scalable web applications that users love.",
-      bio2: "When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community. I believe in continuous learning and staying up-to-date with the latest industry trends.",
+      bio1: "I'm passionate about developing well-structured and functional software, and I enjoy learning and experimenting with modern JavaScript frameworks and cloud technologies.",
+      bio2: "Outside of my daily work, I dedicate time to exploring new tools, improving my technical skills, and staying up-to-date with industry trends, always with a continuous learning mindset.",
     },
     skills: {
       title: "Skills & Expertise",
@@ -45,7 +45,7 @@ export const translations = {
         devops: "DevOps & Tools",
         services: "Services",
       },
-      services: ["Web Programming", "Web Design", "SEO Optimization", "Performance Tuning", "Web Hosting"],
+      services: ["Web Programming", "Web Design", "SEO Optimization", "Web Hosting"],
     },
     projects: {
       title: "Featured Projects",
@@ -116,8 +116,7 @@ export const translations = {
     },
     about: {
       title: "Acerca de Mí",
-      subtitle:
-        "Un desarrollador full-stack apasionado con más de 2 años de experiencia construyendo aplicaciones web modernas",
+      subtitle: "Desarrollador full-stack proactivo enfocado en crear aplicaciones web escalables y centradas en el usuario. Especializado en desarrollo front-end con un enfoque móvil y responsivo, con capacidad para integrar APIs y trabajar con bases de datos. Destaco en la aplicación de lógica y automatización para mejorar procesos y optimizar la funcionalidad, y me adapto fácilmente a entornos colaborativos donde el trabajo en equipo es esencial.",
       features: {
         cleanCode: {
           title: "Código Limpio",
@@ -132,8 +131,8 @@ export const translations = {
           description: "Fuertes habilidades de comunicación y experiencia trabajando en equipos multifuncionales",
         },
       },
-      bio1: "Soy un desarrollador full-stack dedicado que ama convertir problemas complejos en soluciones simples, hermosas e intuitivas. Con experiencia en frameworks modernos de JavaScript y tecnologías en la nube, ayudo a las empresas a construir aplicaciones web escalables que los usuarios adoran.",
-      bio2: "Cuando no estoy programando, me encontrarás explorando nuevas tecnologías, contribuyendo a proyectos de código abierto o compartiendo conocimientos con la comunidad de desarrolladores. Creo en el aprendizaje continuo y en mantenerme actualizado con las últimas tendencias de la industria.",
+      bio1: "Me interesa el desarrollo de software bien estructurado y funcional, y disfruto aprender y experimentar con frameworks modernos de JavaScript y tecnologías en la nube.",
+      bio2: "Fuera del trabajo diario, dedico tiempo a explorar nuevas herramientas, mejorar mis habilidades técnicas y mantenerme actualizado con las tendencias del sector, siempre con una actitud de aprendizaje continuo.",
     },
     skills: {
       title: "Habilidades y Experiencia",
@@ -148,7 +147,6 @@ export const translations = {
         "Programación Web",
         "Diseño Web",
         "Optimización SEO",
-        "Optimización de Rendimiento",
         "Alojamiento Web",
       ],
     },
