@@ -13,8 +13,8 @@ export function Footer() {
 
   const socialLinks = [
     { icon: Github, href: "https://github.com/rodrigojmayer", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
+    { icon: Linkedin, href: "https://linkedin.com/in/rodrigojmayer/", label: "LinkedIn" },
+    // { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
     { icon: Mail, href: "mailto:rodrigojmayer@gmail.com", label: "Email" },
   ]
 
