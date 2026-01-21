@@ -1,5 +1,6 @@
 "use client"
 
+import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react"
 import { useApp } from "@/lib/context"
@@ -8,6 +9,14 @@ import { translations } from "@/lib/translations"
 export function Hero() {
   const { language } = useApp()
   const t = translations[language]
+
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+  
+  if (!mounted) return null
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
