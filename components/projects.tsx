@@ -16,7 +16,7 @@ export function Projects() {
       title: t.projects.items[0].title,
       description: t.projects.items[0].description,
       image: "/Great-stock-pro-image-show3.png",
-      tags: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
+      tags: ["React.js", "TypeScript", "Node.js", "MongoDB"],
       // tags: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
       github: "https://github.com/rodrigojmayer/stockpro",
       demo: 'https://stockpro-deploy.onrender.com/',
