@@ -109,7 +109,7 @@ export function Contact() {
                   required
                 />
               </div>
-              <Button type="submit" size="lg" className="w-full md:w-auto">
+              <Button type="submit" size="lg" className="w-full md:w-auto cursor-pointer">
                 {t.contact.form.send}
               </Button>
             </form>
