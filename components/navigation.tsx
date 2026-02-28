@@ -74,7 +74,7 @@ export function Navigation() {
             <Button variant="ghost" size="icon" onClick={toggleTheme} className="ml-2  cursor-pointer">
               {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
             </Button>
-            <Button variant="ghost"  onClick={() => setLanguage(language === "en" ? "es" : "en")}>
+            <Button variant="ghost"  onClick={() => setLanguage(language === "en" ? "es" : "en")} className="cursor-pointer">
               <Globe className="h-5 w-5" />
               <span className="ml-1 text-xs font-semibold">{language.toUpperCase()}</span>
             </Button>
