@@ -71,7 +71,7 @@ export function Navigation() {
               ))}
             </div>
             </div>
-            <Button variant="ghost" size="icon" onClick={toggleTheme} className="ml-2">
+            <Button variant="ghost" size="icon" onClick={toggleTheme} className="ml-2  cursor-pointer">
               {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
             </Button>
             <Button variant="ghost"  onClick={() => setLanguage(language === "en" ? "es" : "en")}>
