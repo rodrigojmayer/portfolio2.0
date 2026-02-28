@@ -15,7 +15,7 @@ export function Projects() {
     {
       title: t.projects.items[0].title,
       description: t.projects.items[0].description,
-      image: "/modern-ecommerce-dashboard.jpg",
+      image: "/Great-stock-pro-image-show3.png",
       tags: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
       // tags: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
       github: "https://github.com/rodrigojmayer/stockpro",
