@@ -54,9 +54,10 @@ export const translations = {
       demo: "Demo",
       items: [
         {
-          title: "E-Commerce Platform",
+          title: "StockPro",
           description:
-            "A full-featured e-commerce platform with payment integration, inventory management, and admin dashboard",
+            "A versatile stock control tool designed for individuals and businesses. It offers customizable features for efficient inventory management, user-specific access levels and multilingual.",
+            // "A full-featured e-commerce platform with payment integration, inventory management, and admin dashboard",
         },
         {
           title: "Task Management App",
@@ -157,9 +158,10 @@ export const translations = {
       demo: "Demo",
       items: [
         {
-          title: "Plataforma E-Commerce",
+          title: "StockPro",
           description:
-            "Una plataforma de comercio electrónico completa con integración de pagos, gestión de inventario y panel de administración",
+            `Una herramienta versátil de control de inventario diseñada para particulares y empresas. Ofrece funciones personalizables para una gestión eficiente del inventario, niveles de acceso específicos para cada usuario y es multilingüe.`,
+            // "Una plataforma de comercio electrónico completa con integración de pagos, gestión de inventario y panel de administración",
         },
         {
           title: "App de Gestión de Tareas",
