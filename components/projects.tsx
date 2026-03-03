@@ -124,12 +124,11 @@ export function Projects() {
                     onClick={(e) => e.stopPropagation()}
                   >
                     {/* HEADER IMAGE */}
-                    <div className="relative h-[40vh]">
+                    <div className="relative h-[15vh]">
                       <img
                         src={activeProject.image}
                         className="w-full h-full object-cover"
                       />
-
                       <button
                         onClick={() => setActiveProject(null)}
                         className="
