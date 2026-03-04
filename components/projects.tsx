@@ -135,6 +135,10 @@ export function Projects() {
                           absolute top-4 right-4
                           bg-black/50 text-white
                           px-4 py-2 rounded-lg
+                          cursor-pointer
+                          hover:bg-black/90 
+                          active:bg-black/10
+
                         "
                       >
                         Close
