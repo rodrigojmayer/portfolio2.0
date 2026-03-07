@@ -146,39 +146,41 @@ export function Projects() {
                     </div>
 
                     {/* CONTENT */}
-                    <div className="p-10 max-w-4xl mx-auto">
-                      <h2 className="text-3xl font-bold mb-4">
+                    <div className="w-[90vw] max-w-7xl h-[85vh] mx-auto flex flex-col">
+                      {/* TITLE */}
+                      <h2 className="text-3xl font-bold text-center mb-8">
                         {activeProject.title}
                       </h2>
+                      {/* CONTENT */}
+                      <div className="grid grid-cols-2 gap-10 flex-1 items-center">
+                        {/* LEFT SIDE */}
+                        <div className="flex flex-col justify-center">
+                          <p className="text-muted-foreground mb-6 text-lg leading-relaxed">
+                            {activeProject.description}
+                          </p>
 
-                      <p className="text-muted-foreground mb-6">
-                        {activeProject.description}
-                      </p>
+                          <div className="flex flex-wrap gap-2">
+                            {activeProject.tags.map((tag, i) => (
+                              <Badge key={i}>{tag}</Badge>
+                            ))}
+                          </div>
+                        </div>
 
-                      <div className="flex flex-wrap gap-2">
-                        {activeProject.tags.map((tag, i) => (
-                          <Badge key={i}>{tag}</Badge>
-                        ))}
+                        {/* RIGHT SIDE */}
+                        <div className="w-full h-full flex items-center">
+                          <video
+                            src="/StockPro/01-Main-page.webm"
+                            controls
+                            playsInline
+                            autoPlay
+                            muted
+                            loop
+                            className="w-full h-full object-contain rounded-xl shadow-lg"
+                          />
+                        </div>
+
                       </div>
-                       {/* { src: '01-Main-page',              h4_eng: 'Main page unlogged',                           h5_eng: 'Home page before registration. Options to select a language, log in by user or gmail, ask if you forgot your password, or sign up a new user.',    h4_esp: 'Página principal sin inicio de sesión',            h5_esp: 'Página de inicio antes del registro. Opciones para seleccionar un idioma, iniciar sesión con usuario o Gmail, preguntar si olvidó su contraseña o registrar un nuevo usuario.' }, */}
-                      {/* <li class={index == 0 ? 'slide slide-' + project : 'slide slide-' + project + ' hide' } id={'image_' + projects + '_' + index}> */}
-                              <video id={'vid-' + 1 + 1} 
-                                // class ="avatar" 
-                                  src={'/StockPro/01-Main-page.webm'} 
-                                  // alt={'Project ' + "test title" + ' ' + 1}
-                                  controls 
-                                  // playsinline 
-                                  // autoplay 
-                                  muted 
-                                  loop 
-                                  >
-                                  <source src={'/StockPro/01-Main-page.webm'} type="video/webm" />
-                              </video>
-                              {/* <h4 class={`text-first-color ${class_eng}`}>{image.h4_eng}</h4>
-                              <h4 class={`text-first-color ${class_esp}`}>{image.h4_esp}</h4>
-                              <h5 class={class_eng}>{image.h5_eng}</h5>
-                              <h5 class={class_esp}>{image.h5_esp}</h5> */}
-                        {/* </li>  */}
+
                     </div>
                   </motion.div>
                 </motion.div>
