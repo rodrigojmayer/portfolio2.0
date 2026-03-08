@@ -10,10 +10,11 @@ export const projects = [
     },
     {
       image: "/task-management-app.jpg",
-      tags: ["React", "Node.js", "Socket.io", "MongoDB"],
-      github: "#",
+      tags: ["?????????"],
+      github: "https://github.com/rodrigojmayer/expense_control_frontend",
       demo: "#",
-      slug: 'stockpro2',
+      video: '/StockPro/01-Main-page.webm',
+      slug: 'expensecontrol',
     },
     {
       image: "/analytics-dashboard.png",
