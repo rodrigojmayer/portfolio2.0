@@ -5,6 +5,7 @@ export const projects = [
       // tags: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
       github: "https://github.com/rodrigojmayer/stockpro",
       demo: 'https://stockpro-deploy.onrender.com/',
+      video: '/StockPro/01-Main-page.webm',
       slug: 'stockpro',
     },
     {

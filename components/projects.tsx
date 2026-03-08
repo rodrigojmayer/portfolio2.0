@@ -146,7 +146,7 @@ export function Projects() {
                     </div>
 
                     {/* CONTENT */}
-                    <div className="w-[90vw] max-w-7xl h-[85vh] mx-auto flex flex-col">
+                    <div className="w-[90vw] max-w-7xl h-[75vh] mx-auto flex flex-col">
                       {/* TITLE */}
                       <h2 className="text-3xl font-bold text-center mb-8">
                         {activeProject.title}
@@ -169,7 +169,8 @@ export function Projects() {
                         {/* RIGHT SIDE */}
                         <div className="w-full h-full flex items-center">
                           <video
-                            src="/StockPro/01-Main-page.webm"
+                            // src="/StockPro/01-Main-page.webm"
+                            src={activeProject.video}
                             controls
                             playsInline
                             autoPlay
