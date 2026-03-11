@@ -9,11 +9,11 @@ export const projects = [
       slug: 'stockpro',
     },
     {
-      image: "/task-management-app.jpg",
-      tags: ["?????????"],
+      image: "/Great-expensecontrolheroimage.png",
+      tags: ["React.js", "TypeScript", "Node.js", "CSS"],
       github: "https://github.com/rodrigojmayer/expense_control_frontend",
-      demo: "#",
-      video: '/StockPro/01-Main-page.webm',
+      demo: "https://expense-control-frontend.onrender.com/",
+      video: '/ExpenseControl/01-Start-page.webm',
       slug: 'expensecontrol',
     },
     {
