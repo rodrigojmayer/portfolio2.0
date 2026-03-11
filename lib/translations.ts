@@ -60,9 +60,9 @@ export const translations = {
             // "A full-featured e-commerce platform with payment integration, inventory management, and admin dashboard",
         },
         {
-          title: "Task Management App",
+          title: "Expenses Control App",
           description:
-            "Collaborative task management application with real-time updates and team collaboration features",
+            "Web application for tracking a business’s product and service sales.",
         },
         {
           title: "Analytics Dashboard",
@@ -164,9 +164,9 @@ export const translations = {
             // "Una plataforma de comercio electrónico completa con integración de pagos, gestión de inventario y panel de administración",
         },
         {
-          title: "App de Gestión de Tareas",
+          title: "Expenses Control App",
           description:
-            "Aplicación colaborativa de gestión de tareas con actualizaciones en tiempo real y funciones de colaboración en equipo",
+            "Aplicación web para el seguimiento de las ventas de productos y servicios de una empresa.",
         },
         {
           title: "Panel de Análisis",
