@@ -62,7 +62,7 @@ export const translations = {
         {
           title: "Expenses Control App",
           description:
-            "Web application for tracking a business’s product and service sales.",
+            "Web application for tracking a business’s product and service sales. It allows users to select customers, choose payment methods, add articles to a cart, and export transactions to a Google Sheets history by customer.",
         },
         {
           title: "Analytics Dashboard",
@@ -160,13 +160,13 @@ export const translations = {
         {
           title: "StockPro",
           description:
-            `Una herramienta versátil de control de inventario diseñada para particulares y empresas. Ofrece funciones personalizables para una gestión eficiente del inventario, niveles de acceso específicos para cada usuario y es multilingüe.`,
+            `Una herramienta versátil de control de inventario diseñada para particulares y empresas. Ofrece funciones personalizables para una gestión eficiente del inventario, niveles de acceso específicos para cada usuario y es totalmente multilingüe.`,
             // "Una plataforma de comercio electrónico completa con integración de pagos, gestión de inventario y panel de administración",
         },
         {
           title: "Expenses Control App",
           description:
-            "Aplicación web para el seguimiento de las ventas de productos y servicios de una empresa.",
+            "Aplicación web para el seguimiento de las ventas de productos y servicios de una empresa. Permite seleccionar clientes, elegir métodos de pago, añadir artículos al carrito y exportar las transacciones a un historial de Google Sheets por cliente.",
         },
         {
           title: "Panel de Análisis",
