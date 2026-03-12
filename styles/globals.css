@@ -123,3 +123,31 @@
     @apply bg-background text-foreground;
   }
 }
+/* .project-swiper .swiper-slide {
+  width: 70%;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  opacity: 0.35;
+  transform: scale(0.75);
+    display: flex;
+  justify-content: center;
+}
+
+.project-swiper .swiper-slide-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.carousel-video{
+  width:90%;
+  border-radius:12px;
+}
+
+.project-swiper .swiper-wrapper{
+  align-items: center;
+}
+
+.project-swiper .swiper-slide{
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  opacity: 0.4;
+  transform: scale(0.75);
+} */

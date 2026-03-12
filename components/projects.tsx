@@ -10,6 +10,13 @@ import { translations } from "@/lib/translations"
 import { projects } from "@/lib/projects"
 import { motion, AnimatePresence, LayoutGroup } from "framer-motion"
 import { useState, useEffect } from "react"
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Navigation, Pagination, EffectCoverflow } from "swiper/modules"
+
+import "swiper/css"
+import "swiper/css/navigation"
+import "swiper/css/pagination"
+import "swiper/css/effect-coverflow"
 
 export function Projects() {
   const { language } = useApp()
@@ -168,7 +175,7 @@ export function Projects() {
 
                         {/* RIGHT SIDE */}
                         <div className="w-full h-full flex items-center">
-                          <video
+                          {/* <video
                             // src="/StockPro/01-Main-page.webm"
                             src={activeProject.video}
                             controls
@@ -177,7 +184,53 @@ export function Projects() {
                             muted
                             loop
                             className="w-full h-full object-contain rounded-xl shadow-lg"
-                          />
+                          /> */}
+                          {/* <Swiper
+                            modules={[Navigation, Pagination]}
+                            navigation
+                            pagination={{ clickable: true }}
+                            centeredSlides
+                            slidesPerView={1.8}
+                            spaceBetween={30}
+                            // className="w-full"
+                            className="project-swiper"
+                          > */}
+                            <Swiper
+                            modules={[Navigation, Pagination, EffectCoverflow]} // Agregar EffectCoverflow
+                            effect="coverflow" // Habilitar el efecto
+                            grabCursor={true} // Cambiar cursor a mano al pasar
+                            centeredSlides={true} // Centrar diapositiva activa
+                            slidesPerView={1.7} // Cambia "auto" por un número decimal
+                            coverflowEffect={{ // Configuración detallada del efecto
+                              rotate: 0, // No rotar las diapositivas (mantenerlas planas como en imagen 2)
+                              stretch: 0, 
+                              depth: 200, // Profundidad de las diapositivas secundarias
+                              modifier: 1.5, // Multiplicador del efecto depth para mayor diferencia de tamaño
+                              slideShadows: false, // Habilitar sombras para mayor sensación de profundidad (como imagen 2)
+                            }}
+                            navigation={{ // Configuración personalizada de navegación
+                              prevEl: '.swiper-button-prev-custom',
+                              nextEl: '.swiper-button-next-custom',
+                            }}
+                            pagination={{ clickable: true }}
+                            // className="w-full"
+                          className="project-swiper pt-10 pb-12 " // Agregar padding para no cortar sombras
+                          >
+                            {activeProject.videos?.map((video, i) => (
+                              <SwiperSlide key={i} className="w-[80vw] max-w-[700px] flex justify-center items-center">
+                                <video
+                                  src={video}
+                                  controls
+                                  playsInline
+                                  muted
+className="carousel-video rounded-xl shadow-xl border-2 border-primary/20"
+                                  // className="w-full rounded-xl shadow-lg"
+                                />
+                              </SwiperSlide>
+                            ))}
+                            <div className="swiper-button-prev swiper-button-prev-custom text-primary font-bold"></div>
+                            <div className="swiper-button-next swiper-button-next-custom text-primary font-bold"></div>
+                          </Swiper>
                         </div>
 
                       </div>
