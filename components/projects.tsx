@@ -153,15 +153,15 @@ export function Projects() {
                     </div>
 
                     {/* CONTENT */}
-                    <div className="w-[90vw] max-w-7xl h-[75vh] mx-auto flex flex-col">
+                    <div className="w-[93vw] h-[75vh] mx-auto flex flex-col">
                       {/* TITLE */}
                       <h2 className="text-3xl font-bold text-center mb-8">
                         {activeProject.title}
                       </h2>
                       {/* CONTENT */}
-                      <div className="grid grid-cols-2 gap-10 flex-1 items-center">
+                      <div className="grid grid-cols-3 gap-10 flex-1 items-center">
                         {/* LEFT SIDE */}
-                        <div className="flex flex-col justify-center">
+                        <div className="col-span-1 flex flex-col justify-center">
                           <p className="text-muted-foreground mb-6 text-lg leading-relaxed">
                             {activeProject.description}
                           </p>
@@ -174,7 +174,7 @@ export function Projects() {
                         </div>
 
                         {/* RIGHT SIDE */}
-                        <div className="w-full h-full flex items-center">
+                        <div className="col-span-2 w-full h-full flex items-center">
                           {/* <video
                             // src="/StockPro/01-Main-page.webm"
                             src={activeProject.video}
