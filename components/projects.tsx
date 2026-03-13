@@ -200,12 +200,16 @@ export function Projects() {
                             effect="coverflow" // Habilitar el efecto
                             grabCursor={true} // Cambiar cursor a mano al pasar
                             centeredSlides={true} // Centrar diapositiva activa
+                            watchSlidesProgress={true} // Esto ayuda a que las clases de estado se actualicen bien
+                            preventClicks={false}
+                            preventClicksPropagation={false}
+                            className="w-full !overflow-hidden py-10" // Asegúrate que este nombre coincida con el CSS
                             slidesPerView={1.7} // Cambia "auto" por un número decimal
                             coverflowEffect={{ // Configuración detallada del efecto
-                              rotate: 0, // No rotar las diapositivas (mantenerlas planas como en imagen 2)
-                              stretch: 0, 
-                              depth: 200, // Profundidad de las diapositivas secundarias
-                              modifier: 1.5, // Multiplicador del efecto depth para mayor diferencia de tamaño
+                              rotate: -100, // No rotar las diapositivas (mantenerlas planas como en imagen 2)
+                              stretch: 100, 
+                              depth: 260, // Profundidad de las diapositivas secundarias
+                              modifier: 0.5, // Multiplicador del efecto depth para mayor diferencia de tamaño
                               slideShadows: false, // Habilitar sombras para mayor sensación de profundidad (como imagen 2)
                             }}
                             navigation={{ // Configuración personalizada de navegación
@@ -214,22 +218,34 @@ export function Projects() {
                             }}
                             pagination={{ clickable: true }}
                             // className="w-full"
-                          className="project-swiper pt-10 pb-12 " // Agregar padding para no cortar sombras
+                          // className="project-swiper pt-10 pb-12 " // Agregar padding para no cortar sombras
                           >
                             {activeProject.videos?.map((video, i) => (
                               <SwiperSlide key={i} className="w-[80vw] max-w-[700px] flex justify-center items-center">
+                                {({ isActive }) => ( // Usamos el render prop de Swiper para manejar estados
+                              <div className={`transition-all duration-500 ${isActive ? 'scale-110 opacity-100' : 'scale-75 opacity-40 blur-[1px]'}`}>
                                 <video
                                   src={video}
                                   controls
                                   playsInline
                                   muted
+                                  autoPlay={isActive}
+            loop
+            // className="w-full rounded-2xl shadow-2xl bg-black aspect-video object-contain"
+            // style={{ pointerEvents: isActive ? 'auto' : 'none' }}
 className="carousel-video rounded-xl shadow-xl border-2 border-primary/20"
                                   // className="w-full rounded-xl shadow-lg"
                                 />
+                                </div>
+      )}
                               </SwiperSlide>
                             ))}
-                            <div className="swiper-button-prev swiper-button-prev-custom text-primary font-bold"></div>
-                            <div className="swiper-button-next swiper-button-next-custom text-primary font-bold"></div>
+                            <div className="prev-arrow-custom" 
+                            // "swiper-button-prev swiper-button-prev-custom text-primary font-bold"
+                            ></div>
+                            <div className="next-arrow-custom"
+                            // "swiper-button-next swiper-button-next-custom text-primary font-bold"
+                            ></div>
                           </Swiper>
                         </div>
 
