@@ -174,7 +174,7 @@ export function Projects() {
                         </div>
 
                         {/* RIGHT SIDE */}
-                        <div className="col-span-2 w-full h-full flex items-center">
+                        <div className="col-span-2 w-full h-full flex flex-col items-center justify-center">
                           {/* <video
                             // src="/StockPro/01-Main-page.webm"
                             src={activeProject.video}
@@ -198,13 +198,13 @@ export function Projects() {
                             <Swiper
                             modules={[Navigation, Pagination, EffectCoverflow]} // Agregar EffectCoverflow
                             effect="coverflow" // Habilitar el efecto
-                            grabCursor={true} // Cambiar cursor a mano al pasar
                             centeredSlides={true} // Centrar diapositiva activa
+                            slidesPerView={1.7} // Cambia "auto" por un número decimal
+                            grabCursor={true} // Cambiar cursor a mano al pasar
                             watchSlidesProgress={true} // Esto ayuda a que las clases de estado se actualicen bien
                             preventClicks={false}
                             preventClicksPropagation={false}
                             className="w-full !overflow-hidden py-10" // Asegúrate que este nombre coincida con el CSS
-                            slidesPerView={1.7} // Cambia "auto" por un número decimal
                             coverflowEffect={{ // Configuración detallada del efecto
                               rotate: -100, // No rotar las diapositivas (mantenerlas planas como en imagen 2)
                               stretch: 100, 
@@ -216,37 +216,42 @@ export function Projects() {
                               prevEl: '.swiper-button-prev-custom',
                               nextEl: '.swiper-button-next-custom',
                             }}
-                            pagination={{ clickable: true }}
+                            pagination={{ 
+                                el: '.swiper-pagination-custom',
+                                clickable: true 
+                              }}
+
                             // className="w-full"
                           // className="project-swiper pt-10 pb-12 " // Agregar padding para no cortar sombras
                           >
                             {activeProject.videos?.map((video, i) => (
                               <SwiperSlide key={i} className="w-[80vw] max-w-[700px] flex justify-center items-center">
                                 {({ isActive }) => ( // Usamos el render prop de Swiper para manejar estados
-                              <div className={`transition-all duration-500 ${isActive ? 'scale-110 opacity-100' : 'scale-75 opacity-40 blur-[1px]'}`}>
-                                <video
-                                  src={video}
-                                  controls
-                                  playsInline
-                                  muted
-                                  autoPlay={isActive}
-            loop
-            // className="w-full rounded-2xl shadow-2xl bg-black aspect-video object-contain"
-            // style={{ pointerEvents: isActive ? 'auto' : 'none' }}
-className="carousel-video rounded-xl shadow-xl border-2 border-primary/20"
-                                  // className="w-full rounded-xl shadow-lg"
-                                />
-                                </div>
-      )}
+                                  <div className={`transition-all duration-500 ${isActive ? 'scale-110 opacity-100' : 'scale-75 opacity-40 blur-[1px]'}`}>
+                                    <video
+                                      src={video}
+                                      controls
+                                      playsInline
+                                      muted
+                                      autoPlay={isActive}
+                                      loop
+                                      // className="w-full rounded-2xl shadow-2xl bg-black aspect-video object-contain"
+                                      // style={{ pointerEvents: isActive ? 'auto' : 'none' }}
+                                      className="carousel-video rounded-xl shadow-xl border-2 border-primary/20"
+                                      // className="w-full rounded-xl shadow-lg"
+                                    />
+                                    </div>
+                                )}
                               </SwiperSlide>
                             ))}
-                            <div className="prev-arrow-custom" 
+                            {/* <div className="prev-arrow-custom" 
                             // "swiper-button-prev swiper-button-prev-custom text-primary font-bold"
                             ></div>
                             <div className="next-arrow-custom"
                             // "swiper-button-next swiper-button-next-custom text-primary font-bold"
-                            ></div>
+                            ></div> */}
                           </Swiper>
+                          <div className="swiper-pagination-custom mt-4 flex items-center justify-center">aaaaaaa</div>
                         </div>
 
                       </div>
