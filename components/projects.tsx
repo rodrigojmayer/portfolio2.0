@@ -203,13 +203,14 @@ export function Projects() {
                             grabCursor={true} // Cambiar cursor a mano al pasar
                             watchSlidesProgress={true} // Esto ayuda a que las clases de estado se actualicen bien
                             preventClicks={false}
+                            spaceBetween={-60}
                             preventClicksPropagation={false}
                             className="w-full !overflow-hidden py-10" // Asegúrate que este nombre coincida con el CSS
                             coverflowEffect={{ // Configuración detallada del efecto
                               rotate: -100, // No rotar las diapositivas (mantenerlas planas como en imagen 2)
                               stretch: 100, 
                               depth: 260, // Profundidad de las diapositivas secundarias
-                              modifier: 0.5, // Multiplicador del efecto depth para mayor diferencia de tamaño
+                              modifier: 0.6, // Multiplicador del efecto depth para mayor diferencia de tamaño
                               slideShadows: false, // Habilitar sombras para mayor sensación de profundidad (como imagen 2)
                             }}
                             navigation={{ // Configuración personalizada de navegación
@@ -224,7 +225,7 @@ export function Projects() {
                             {activeProject.videos?.map((video, i) => (
                               <SwiperSlide key={i} className="w-[80vw] max-w-[700px] flex justify-center items-center">
                                 {({ isActive }) => ( // Usamos el render prop de Swiper para manejar estados
-                                  <div className={`transition-all duration-500 ${isActive ? 'scale-110 opacity-100' : 'scale-75 opacity-40 blur-[1px]'}`}>
+                                  <div className={`transition-all duration-500 ${isActive ? 'scale-100 opacity-100' : 'scale-75 opacity-40 blur-[1px]'}`}>
                                     <video
                                       src={video.src}
                                       controls
