@@ -5,8 +5,8 @@ export const projects = [
       // tags: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
       github: "https://github.com/rodrigojmayer/stockpro",
       demo: 'https://stockpro-deploy.onrender.com/',
-      video: '/StockPro/01-Main-page.webm',
-      videos: [
+      // video: '/StockPro/01-Main-page.webm',
+      video: [
         '/StockPro/01-Main-page.webm',
         '/StockPro/02-Sign-up.webm',
         '/StockPro/03-Log-in-with-user-pass.webm',
@@ -37,21 +37,47 @@ export const projects = [
       tags: ["React.js", "TypeScript", "Node.js", "CSS"],
       github: "https://github.com/rodrigojmayer/expense_control_frontend",
       demo: "https://expense-control-frontend.onrender.com/",
-      video: '/ExpenseControl/01-Start-page.webm',
+      // video: '/ExpenseControl/01-Start-page.webm',
       videos: [
-        '/ExpenseControl/01-Start-page.webm',
-        '/ExpenseControl/02-Payment-method-page.webm',
-        '/ExpenseControl/03-Articles-page.webm',
-        '/ExpenseControl/04-Create-new-article.webm',
-        '/ExpenseControl/05-Create-new-group.webm',
-        '/ExpenseControl/06-Edit-article.webm',
-        '/ExpenseControl/07-Delete-article.webm',
-        '/ExpenseControl/08-Edit-group.webm',
-        '/ExpenseControl/09-Delete-group.webm',
-        '/ExpenseControl/10-Select-articles.webm',
-        '/ExpenseControl/11-Cart-page.webm',
-        '/ExpenseControl/12-Export-transaction.webm',
+        { src: '/ExpenseControl/01-Start-page.webm',
+          title: 'Titulo 1'
+        },
+        { src: '/ExpenseControl/02-Payment-method-page.webm',
+          title: 'Titulo 2'
+        },
+        { src: '/ExpenseControl/03-Articles-page.webm',
+          title: 'Titulo 3'
+        },
+        { src: '/ExpenseControl/04-Create-new-article.webm',
+          title: 'Titulo 4'
+        },
+        { src: '/ExpenseControl/05-Create-new-group.webm',
+          title: 'Titulo 5'
+        },
+        { src: '/ExpenseControl/06-Edit-article.webm',
+          title: 'Titulo 6'
+        },
+        { src: '/ExpenseControl/07-Delete-article.webm',
+          title: 'Titulo 7'
+        },
+        { src: '/ExpenseControl/08-Edit-group.webm',
+          title: 'Titulo 8'
+        },
+        { src: '/ExpenseControl/09-Delete-group.webm',
+          title: 'Titulo 9'
+        },
+        { src: '/ExpenseControl/10-Select-articles.webm',
+          title: 'Titulo 10'
+        },
+        { src: '/ExpenseControl/11-Cart-page.webm',
+          title: 'Titulo 11'
+        },
+        { src: '/ExpenseControl/12-Export-transaction.webm',
+          title: 'Titulo 12'
+        }
       ],
+
+      // title 
       slug: 'expensecontrol',
     },
     {
