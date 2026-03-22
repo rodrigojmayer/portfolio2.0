@@ -251,7 +251,7 @@ export function Projects() {
                           <div className="flex items-center gap-6 mt-4">
     
                             {/* LEFT ARROW */}
-                            <button className="swiper-button-prev-custom bg-black/50 text-white px-3 py-2 rounded-lg cursor-pointer">
+                            <button className="swiper-button-prev-custom px-3 py-2 rounded-lg cursor-pointer">
                               ◀
                             </button>
 
@@ -259,7 +259,7 @@ export function Projects() {
                             <div className="swiper-pagination-custom flex items-center"></div>
 
                             {/* RIGHT ARROW */}
-                            <button className="swiper-button-next-custom bg-black/50 text-white px-3 py-2 rounded-lg cursor-pointer">
+                            <button className="swiper-button-next-custom px-3 py-2 rounded-lg cursor-pointer">
                               ▶
                             </button>
 
