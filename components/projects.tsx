@@ -213,14 +213,15 @@ export function Projects() {
                               modifier: 0.6, // Multiplicador del efecto depth para mayor diferencia de tamaño
                               slideShadows: false, // Habilitar sombras para mayor sensación de profundidad (como imagen 2)
                             }}
+                            // navigation={true}
                             navigation={{ // Configuración personalizada de navegación
                               prevEl: '.swiper-button-prev-custom',
                               nextEl: '.swiper-button-next-custom',
                             }}
                             pagination={{ 
-                                el: '.swiper-pagination-custom',
-                                clickable: true 
-                              }}
+                              el: '.swiper-pagination-custom',
+                              clickable: true 
+                            }}
                           >
                             {activeProject.videos?.map((video, i) => (
                               <SwiperSlide key={i} className="w-[80vw] max-w-[700px] flex justify-center items-center">
@@ -235,7 +236,6 @@ export function Projects() {
                                       loop
                                       className="carousel-video rounded-xl shadow-xl border-2 border-primary/20"
                                     />
-
                                     {/* TEXTO SOBRE EL VIDEO */}
                                     <div className="absolute top-2 left-2">
                                       <p className="text-white text-sm md:text-base font-semibold bg-black/50 backdrop-blur px-3 py-1 rounded-lg inline-block">
@@ -247,7 +247,26 @@ export function Projects() {
                               </SwiperSlide>
                             ))}
                           </Swiper>
-                          <div className="swiper-pagination-custom mt-4 flex items-center justify-center">aaaaaaa</div>
+
+                          <div className="flex items-center gap-6 mt-4">
+    
+                            {/* LEFT ARROW */}
+                            <button className="swiper-button-prev-custom bg-black/50 text-white px-3 py-2 rounded-lg cursor-pointer">
+                              ◀
+                            </button>
+
+                            {/* BULLETS */}
+                            <div className="swiper-pagination-custom flex items-center"></div>
+
+                            {/* RIGHT ARROW */}
+                            <button className="swiper-button-next-custom bg-black/50 text-white px-3 py-2 rounded-lg cursor-pointer">
+                              ▶
+                            </button>
+
+                          </div>
+
+
+                          {/* <div className="swiper-pagination-custom mt-4 flex items-center justify-center"></div> */}
                         </div>
 
                       </div>
