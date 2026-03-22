@@ -191,3 +191,15 @@ html {
 .delay-500 {
   animation-delay: 0.5s;
 }
+
+.swiper-pagination-bullet {
+  background: var(--muted-foreground) !important;
+  opacity: 0.4;
+  width: 14px !important;
+  height: 14px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--primary) !important;
+  opacity: 1;
+}
