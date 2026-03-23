@@ -213,6 +213,12 @@ export function Projects() {
                               modifier: 0.6, // Multiplicador del efecto depth para mayor diferencia de tamaño
                               slideShadows: false, // Habilitar sombras para mayor sensación de profundidad (como imagen 2)
                             }}
+                            breakpoints={{
+                              768: {
+                                allowTouchMove: false,
+                                grabCursor: false,
+                              }
+                            }}
                             // navigation={true}
                             navigation={{ // Configuración personalizada de navegación
                               prevEl: '.swiper-button-prev-custom',
