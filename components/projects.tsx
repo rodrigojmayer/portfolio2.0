@@ -203,9 +203,10 @@ export function Projects() {
                             grabCursor={true} // Cambiar cursor a mano al pasar
                             watchSlidesProgress={true} // Esto ayuda a que las clases de estado se actualicen bien
                             preventClicks={false}
-                            spaceBetween={-60}
                             preventClicksPropagation={false}
-                            className="w-full !overflow-hidden py-10" // Asegúrate que este nombre coincida con el CSS
+                            slideToClickedSlide={true}
+                            spaceBetween={-60}
+                            className="w-full !overflow-hidden py-10 relative" // Asegúrate que este nombre coincida con el CSS
                             coverflowEffect={{ // Configuración detallada del efecto
                               rotate: -100, // No rotar las diapositivas (mantenerlas planas como en imagen 2)
                               stretch: 100, 
@@ -230,7 +231,10 @@ export function Projects() {
                             }}
                           >
                             {activeProject.videos?.map((video, i) => (
-                              <SwiperSlide key={i} className="w-[80vw] max-w-[700px] flex justify-center items-center">
+                              <SwiperSlide 
+                                key={i} 
+                                className="w-[80vw] max-w-[700px] h-full flex justify-center items-center"
+                                >
                                 {({ isActive }) => { // Usamos el render prop de Swiper para manejar estados
                                   const videoRef = React.useRef<HTMLVideoElement>(null)
 
@@ -245,23 +249,45 @@ export function Projects() {
                                   }, [isActive])
 
                                   return(                               
-                                  
-                                    <div className={`transition-all duration-500 ${isActive ? 'scale-100 opacity-100' : 'scale-75 opacity-40 blur-[1px]'}`}>
-                                      <video
-                                        ref={videoRef}
-                                        src={video.src}
-                                        controls
-                                        playsInline
-                                        muted
-                                        // autoPlay={isActive}
-                                        loop
-                                        className="carousel-video rounded-xl shadow-xl border-2 border-primary/20"
-                                      />
-                                      {/* TEXTO SOBRE EL VIDEO */}
-                                      <div className="absolute top-2 left-2">
-                                        <p className="text-white text-sm md:text-base font-semibold bg-black/50 backdrop-blur px-3 py-1 rounded-lg inline-block">
-                                          {video.title}
-                                        </p>
+                                    <div 
+                                      className="w-full h-full flex items-center justify-center transition-all duration-500"
+                                      style={{
+                                        zIndex: isActive ? 50 : 0,
+                                        position: 'relative',
+                                        pointerEvents: 'auto' // Permitimos clics en este nivel
+                                      }}
+                                    > 
+                                      <div 
+                                        className={`
+                                           w-full h-full flex items-center justify-center transition-all duration-500
+                                          ${isActive 
+                                            ? 'scale-100 opacity-100' 
+                                            : 'scale-75 opacity-40 blur-[1px] cursor-pointer hover:scale-90'
+                                        }`}
+                                      >
+                                        {!isActive && (
+                                          <div className="absolute inset-0 z-10" />
+                                        )}
+                                          <video
+                                            ref={videoRef}
+                                            src={video.src}
+                                            controls={isActive}
+                                            playsInline
+                                            muted
+                                            // autoPlay={isActive}
+                                            loop
+                                            className={`
+                                              carousel-video rounded-xl shadow-xl border-2 border-primary/20
+                                              w-full h-full object-cover
+                                              ${!isActive ? 'pointer-events-none' : ''} // 👈 CLAVE
+                                            `}
+                                          />
+                                          {/* TEXTO SOBRE EL VIDEO */}
+                                          <div className="absolute top-2 left-2">
+                                            <p className="text-white text-sm md:text-base font-semibold bg-black/50 backdrop-blur px-3 py-1 rounded-lg inline-block">
+                                              {video.title}
+                                            </p>
+                                          </div>
                                       </div>
                                     </div>
                                   )
