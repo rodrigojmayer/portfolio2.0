@@ -225,25 +225,41 @@ export function Projects() {
                           >
                             {activeProject.videos?.map((video, i) => (
                               <SwiperSlide key={i} className="w-[80vw] max-w-[700px] flex justify-center items-center">
-                                {({ isActive }) => ( // Usamos el render prop de Swiper para manejar estados
-                                  <div className={`transition-all duration-500 ${isActive ? 'scale-100 opacity-100' : 'scale-75 opacity-40 blur-[1px]'}`}>
-                                    <video
-                                      src={video.src}
-                                      controls
-                                      playsInline
-                                      muted
-                                      autoPlay={isActive}
-                                      loop
-                                      className="carousel-video rounded-xl shadow-xl border-2 border-primary/20"
-                                    />
-                                    {/* TEXTO SOBRE EL VIDEO */}
-                                    <div className="absolute top-2 left-2">
-                                      <p className="text-white text-sm md:text-base font-semibold bg-black/50 backdrop-blur px-3 py-1 rounded-lg inline-block">
-                                        {video.title}
-                                      </p>
+                                {({ isActive }) => { // Usamos el render prop de Swiper para manejar estados
+                                  const videoRef = React.useRef<HTMLVideoElement>(null)
+
+                                  React.useEffect(() => {
+                                    if(!videoRef.current) return
+                                    if(isActive) {
+                                      videoRef.current.play()
+                                    } else {
+                                      videoRef.current.pause()
+                                      videoRef.current.currentTime = 0 // reset to start
+                                    }
+                                  }, [isActive])
+
+                                  return(                               
+                                  
+                                    <div className={`transition-all duration-500 ${isActive ? 'scale-100 opacity-100' : 'scale-75 opacity-40 blur-[1px]'}`}>
+                                      <video
+                                        ref={videoRef}
+                                        src={video.src}
+                                        controls
+                                        playsInline
+                                        muted
+                                        // autoPlay={isActive}
+                                        loop
+                                        className="carousel-video rounded-xl shadow-xl border-2 border-primary/20"
+                                      />
+                                      {/* TEXTO SOBRE EL VIDEO */}
+                                      <div className="absolute top-2 left-2">
+                                        <p className="text-white text-sm md:text-base font-semibold bg-black/50 backdrop-blur px-3 py-1 rounded-lg inline-block">
+                                          {video.title}
+                                        </p>
+                                      </div>
                                     </div>
-                                  </div>
-                                )}
+                                  )
+                                }}
                               </SwiperSlide>
                             ))}
                           </Swiper>
