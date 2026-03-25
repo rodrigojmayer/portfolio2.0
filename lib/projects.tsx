@@ -40,7 +40,7 @@ export const projects = [
       // video: '/ExpenseControl/01-Start-page.webm',
       videos: [
         { src: '/ExpenseControl/01-Start-page.webm',
-          title: { es: 'Titulo 1', en: 'Title 1' },
+          title: { es: 'Pagina de inicio', en: 'Start page' },
           subtitle: '01-Start-page'
         },
         { src: '/ExpenseControl/02-Payment-method-page.webm',
