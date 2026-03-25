@@ -281,11 +281,19 @@ export function Projects() {
                                               w-full h-full object-cover
                                               ${!isActive ? 'pointer-events-none' : ''} // 👈 CLAVE
                                             `}
+                                          >
+                                          <track
+                                            src={`/ExpenseControl/subtitles/${video.subtitle}-${language}.vtt`}
+                                            kind="subtitles"
+                                            srcLang="es"
+                                            label="Español"
+                                            default
                                           />
+                                          </video>
                                           {/* TEXTO SOBRE EL VIDEO */}
                                           <div className="absolute top-2 left-2">
                                             <p className="text-white text-sm md:text-base font-semibold bg-black/50 backdrop-blur px-3 py-1 rounded-lg inline-block">
-                                              {video.title}
+                                              {video.title[language as "es" | "en"]}
                                             </p>
                                           </div>
                                       </div>

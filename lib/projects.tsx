@@ -40,40 +40,41 @@ export const projects = [
       // video: '/ExpenseControl/01-Start-page.webm',
       videos: [
         { src: '/ExpenseControl/01-Start-page.webm',
-          title: 'Titulo 1'
+          title: { es: 'Titulo 1', en: 'Title 1' },
+          subtitle: '01-test-subtitles'
         },
         { src: '/ExpenseControl/02-Payment-method-page.webm',
-          title: 'Titulo 2'
+          title: { es: 'Titulo 2', en: 'Title 2' },
         },
         { src: '/ExpenseControl/03-Articles-page.webm',
-          title: 'Titulo 3'
+          title: { es: 'Titulo 3', en: 'TitTitlele 3' },
         },
         { src: '/ExpenseControl/04-Create-new-article.webm',
-          title: 'Titulo 4'
+          title: { es: 'Titulo 4', en: 'Title 4' },
         },
         { src: '/ExpenseControl/05-Create-new-group.webm',
-          title: 'Titulo 5'
+          title: { es: 'Titulo 5', en: 'Title 5' },
         },
         { src: '/ExpenseControl/06-Edit-article.webm',
-          title: 'Titulo 6'
+          title: { es: 'Titulo 6', en: 'Title 6' },
         },
         { src: '/ExpenseControl/07-Delete-article.webm',
-          title: 'Titulo 7'
+          title: { es: 'Titulo 7', en: 'Title 7' },
         },
         { src: '/ExpenseControl/08-Edit-group.webm',
-          title: 'Titulo 8'
+          title: { es: 'Titulo 8', en: 'Title 8' },
         },
         { src: '/ExpenseControl/09-Delete-group.webm',
-          title: 'Titulo 9'
+          title: { es: 'Titulo 9', en: 'Title 9' },
         },
         { src: '/ExpenseControl/10-Select-articles.webm',
-          title: 'Titulo 10'
+          title: { es: 'Titulo 10', en: 'Title 10' },
         },
         { src: '/ExpenseControl/11-Cart-page.webm',
-          title: 'Titulo 11'
+          title: { es: 'Titulo 11', en: 'Title 11' },
         },
         { src: '/ExpenseControl/12-Export-transaction.webm',
-          title: 'Titulo 12'
+          title: { es: 'Titulo 12', en: 'Title 12' },
         }
       ],
 
