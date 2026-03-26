@@ -278,7 +278,8 @@ export function Projects() {
                                             loop
                                             className={`
                                               carousel-video rounded-xl shadow-xl border-2 border-primary/20
-                                              w-full h-full object-cover
+                                              w-full h-full 
+                                              object-contain
                                               ${!isActive ? 'pointer-events-none' : ''} // 👈 CLAVE
                                             `}
                                           >
