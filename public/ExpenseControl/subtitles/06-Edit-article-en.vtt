@@ -1,0 +1,25 @@
+WEBVTT
+STYLE
+::cue {
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-size: 18px;
+}
+
+00:00:00.000 --> 00:00:02.500 line:80% position:20% align:start
+Edit an article.
+
+00:00:02.500 --> 00:00:05.000 line:80% position:20% align:start
+Access the edit menu.
+
+00:00:05.000 --> 00:00:08.000 line:80% position:20% align:start
+Update the article name.
+
+00:00:08.000 --> 00:00:11.000 line:80% position:20% align:start
+Modify the price and special price.
+
+00:00:11.000 --> 00:00:14.000 line:80% position:20% align:start
+Assign or change the group.
+
+00:00:14.000 --> 00:00:17.000 line:80% position:20% align:start
+Save the changes easily.

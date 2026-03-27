@@ -60,7 +60,7 @@ export const projects = [
           subtitle: '05-Create-new-group'
         },
         { src: '/ExpenseControl/06-Edit-article.webm',
-          title: { es: 'Titulo 6', en: 'Title 6' },
+          title: { es: 'Editar artículo', en: 'Edit article' },
           subtitle: '06-Edit-article'
         },
         { src: '/ExpenseControl/07-Delete-article.webm',
