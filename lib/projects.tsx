@@ -44,7 +44,8 @@ export const projects = [
           subtitle: '01-Start-page'
         },
         { src: '/ExpenseControl/02-Payment-method-page.webm',
-          title: { es: 'Titulo 2', en: 'Title 2' },
+          title: { es: 'Método de pago', en: 'Payment method' },
+          subtitle: '02-Payment-method-page'
         },
         { src: '/ExpenseControl/03-Articles-page.webm',
           title: { es: 'Titulo 3', en: 'TitTitlele 3' },
