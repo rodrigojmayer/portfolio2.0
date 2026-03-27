@@ -64,7 +64,7 @@ export const projects = [
           subtitle: '06-Edit-article'
         },
         { src: '/ExpenseControl/07-Delete-article.webm',
-          title: { es: 'Titulo 7', en: 'Title 7' },
+          title: { es: 'Eliminar artículo', en: 'Delete article' },
           subtitle: '07-Delete-article'
         },
         { src: '/ExpenseControl/08-Edit-group.webm',
