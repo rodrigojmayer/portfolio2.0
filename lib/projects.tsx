@@ -56,7 +56,7 @@ export const projects = [
           subtitle: '04-Create-new-article'
         },
         { src: '/ExpenseControl/05-Create-new-group.webm',
-          title: { es: 'Titulo 5', en: 'Title 5' },
+          title: { es: 'Crear nuevo grupo', en: 'Create new group' },
           subtitle: '05-Create-new-group'
         },
         { src: '/ExpenseControl/06-Edit-article.webm',

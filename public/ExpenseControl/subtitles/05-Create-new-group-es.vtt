@@ -1,0 +1,22 @@
+WEBVTT
+STYLE
+::cue {
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-size: 18px;
+}
+
+00:00:00.000 --> 00:00:02.500 line:80% position:20% align:start
+Creación de un nuevo grupo.
+
+00:00:02.500 --> 00:00:05.000 line:80% position:20% align:start
+Accede al menú de creación de grupos.
+
+00:00:05.000 --> 00:00:08.000 line:80% position:20% align:start
+Define los datos del grupo.
+
+00:00:08.000 --> 00:00:11.000 line:80% position:20% align:start
+Organiza los artículos de forma eficiente.
+
+00:00:11.000 --> 00:00:14.000 line:80% position:20% align:start
+Guarda el grupo fácilmente.
