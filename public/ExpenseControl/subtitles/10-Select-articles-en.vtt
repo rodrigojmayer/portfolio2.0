@@ -1,0 +1,22 @@
+WEBVTT
+STYLE
+::cue {
+background: rgba(0, 0, 0, 0.4);
+color: white;
+font-size: 18px;
+}
+
+00:00:00.000 --> 00:00:03.000 line:80% position:20% align:start
+Start on the main page.
+
+00:00:03.000 --> 00:00:06.000 line:80% position:20% align:start
+Browse the available items.
+
+00:00:06.000 --> 00:00:09.000 line:80% position:20% align:start
+Select the items you want to add.
+
+00:00:09.000 --> 00:00:12.000 line:80% position:20% align:start
+Add the items to the cart.
+
+00:00:12.000 --> 00:00:15.000 line:80% position:20% align:start
+Check the selected items in the cart.
