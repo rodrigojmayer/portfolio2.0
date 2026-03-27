@@ -68,23 +68,23 @@ export const projects = [
           subtitle: '07-Delete-article'
         },
         { src: '/ExpenseControl/08-Edit-group.webm',
-          title: { es: 'Titulo 8', en: 'Title 8' },
+          title: { es: 'Editar grupo', en: 'Edit group' },
           subtitle: '08-Edit-group'
         },
         { src: '/ExpenseControl/09-Delete-group.webm',
-          title: { es: 'Titulo 9', en: 'Title 9' },
+          title: { es: 'Eliminar grupo', en: 'Delete group' },
           subtitle: '09-Delete-group'
         },
         { src: '/ExpenseControl/10-Select-articles.webm',
-          title: { es: 'Titulo 10', en: 'Title 10' },
+          title: { es: 'Seleccionar artículos', en: 'Select articles' },
           subtitle: '10-Select-articles'
         },
         { src: '/ExpenseControl/11-Cart-page.webm',
-          title: { es: 'Titulo 11', en: 'Title 11' },
+          title: { es: 'Vista previa del carrito', en: 'Cart preview page' },
           subtitle: '11-Cart-page'
         },
         { src: '/ExpenseControl/12-Export-transaction.webm',
-          title: { es: 'Titulo 12', en: 'Title 12' },
+          title: { es: 'Exportar transacción', en: 'Export transaction' },
           subtitle: '12-Export-transaction'
         }
       ],
