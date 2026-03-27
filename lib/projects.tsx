@@ -49,33 +49,43 @@ export const projects = [
         },
         { src: '/ExpenseControl/03-Articles-page.webm',
           title: { es: 'Titulo 3', en: 'TitTitlele 3' },
+          subtitle: '03-Articles-page'
         },
         { src: '/ExpenseControl/04-Create-new-article.webm',
           title: { es: 'Titulo 4', en: 'Title 4' },
+          subtitle: '04-Create-new-article'
         },
         { src: '/ExpenseControl/05-Create-new-group.webm',
           title: { es: 'Titulo 5', en: 'Title 5' },
+          subtitle: '05-Create-new-group'
         },
         { src: '/ExpenseControl/06-Edit-article.webm',
           title: { es: 'Titulo 6', en: 'Title 6' },
+          subtitle: '06-Edit-article'
         },
         { src: '/ExpenseControl/07-Delete-article.webm',
           title: { es: 'Titulo 7', en: 'Title 7' },
+          subtitle: '07-Delete-article'
         },
         { src: '/ExpenseControl/08-Edit-group.webm',
           title: { es: 'Titulo 8', en: 'Title 8' },
+          subtitle: '08-Edit-group'
         },
         { src: '/ExpenseControl/09-Delete-group.webm',
           title: { es: 'Titulo 9', en: 'Title 9' },
+          subtitle: '09-Delete-group'
         },
         { src: '/ExpenseControl/10-Select-articles.webm',
           title: { es: 'Titulo 10', en: 'Title 10' },
+          subtitle: '10-Select-articles'
         },
         { src: '/ExpenseControl/11-Cart-page.webm',
           title: { es: 'Titulo 11', en: 'Title 11' },
+          subtitle: '11-Cart-page'
         },
         { src: '/ExpenseControl/12-Export-transaction.webm',
           title: { es: 'Titulo 12', en: 'Title 12' },
+          subtitle: '12-Export-transaction'
         }
       ],
 
