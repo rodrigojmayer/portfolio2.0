@@ -1,0 +1,22 @@
+WEBVTT
+STYLE
+::cue {
+background: rgba(0, 0, 0, 0.4);
+color: white;
+font-size: 18px;
+}
+
+00:00:00.000 --> 00:00:03.000 line:80% position:20% align:start
+Accede a la configuración de columnas.
+
+00:00:03.000 --> 00:00:06.000 line:80% position:20% align:start
+Se abre el panel de personalización.
+
+00:00:06.000 --> 00:00:09.000 line:80% position:20% align:start
+Selecciona las columnas a mostrar.
+
+00:00:09.000 --> 00:00:12.000 line:80% position:20% align:start
+Oculta las columnas innecesarias.
+
+00:00:12.000 --> 00:00:15.000 line:80% position:20% align:start
+Aplica los cambios en la vista.
