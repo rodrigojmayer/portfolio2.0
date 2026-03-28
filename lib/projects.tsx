@@ -2,161 +2,122 @@ export const projects = [
     {
       image: "/Great-stock-pro-image-show3.png",
       tags: ["React.js", "TypeScript", "Node.js", "MongoDB"],
-      // tags: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
       github: "https://github.com/rodrigojmayer/stockpro",
       demo: 'https://stockpro-deploy.onrender.com/',
-      // video: '/StockPro/01-Main-page.webm',
+      slug: 'stockpro',
       videos: [
-        { src: '/StockPro/01-Main-page.webm',
+        { src: '01-Main-page',
           title: { es: 'Página principal sin inicio de sesión', en: 'Main page unlogged' },
-          subtitle: ''
         },
-        { src: '/StockPro/02-Sign-up.webm',
+        { src: '02-Sign-up',
           title: { es: 'Página de registro', en: 'Sign up' },
-          subtitle: ''
         },
-        { src: '/StockPro/03-Log-in-with-user-pass.webm',
+        { src: '03-Log-in-with-user-pass',
           title: { es: 'Iniciar sesión con usuario y contraseña', en: 'Log in with user and password' },
-          subtitle: ''
         },
-        { src: '/StockPro/04-Log-in-with-gmail.webm',
+        { src: '04-Log-in-with-gmail',
           title: { es: 'Registro automático e inicio de sesión con Gmail', en: 'Automatic registration and login with Gmail' },
-          subtitle: ''
         },
-        { src: '/StockPro/05-Create-stock.webm',
+        { src: '05-Create-stock',
           title: { es: 'Crear nuevo stock', en: 'Create new stock' },
-          subtitle: ''
         },
-        { src: '/StockPro/06-Update-amount.webm',
+        { src: '06-Update-amount',
           title: { es: 'Actualizar cantidad', en: 'Update amount' },
-          subtitle: ''
         },
-        { src: '/StockPro/07-Edit-stock.webm',
+        { src: '07-Edit-stock',
           title: { es: 'Editar stock', en: 'Edit stock' },
-          subtitle: ''
         },
-        { src: '/StockPro/08-Delete-stock.webm',
+        { src: '08-Delete-stock',
           title: { es: 'Eliminar stock', en: 'Delete stock' },
-          subtitle: ''
         },
-        { src: '/StockPro/09-Massive-update-amount.webm',
+        { src: '09-Massive-update-amount',
           title: { es: 'Actualización masiva de cantidad', en: 'Massive update amount' },
-          subtitle: ''
         },
-        { src: '/StockPro/10-Alert-by-amount.webm',
+        { src: '10-Alert-by-amount',
           title: { es: 'Alerta por cantidad', en: 'Alert by amount' },
-          subtitle: ''
         },
-        { src: '/StockPro/11-Alert-by-date.webm',
+        { src: '11-Alert-by-date',
           title: { es: 'Alerta por fecha', en: 'Alert by date' },
-          subtitle: ''
         },
-        { src: '/StockPro/12-Alerts-on-top.webm',
+        { src: '12-Alerts-on-top',
           title: { es: 'Alertas en la parte superior', en: 'Alerts on top' },
-          subtitle: ''
         },
-        { src: '/StockPro/13-Manage-columns.webm',
+        { src: '13-Manage-columns',
           title: { es: 'Administrar columnas', en: 'Manage columns' },
-          subtitle: ''
         },
-        { src: '/StockPro/14-Custom-fields.webm',
+        { src: '14-Custom-fields',
           title: { es: 'Campos personalizados', en: 'Custom fields' },
-          subtitle: ''
         },
-        { src: '/StockPro/15-Order-stock.webm',
+        { src: '15-Order-stock',
           title: { es: 'Ordenar stock', en: 'Order stock' },
-          subtitle: ''
         },
-        { src: '/StockPro/16-Global-search.webm',
+        { src: '16-Global-search',
           title: { es: 'Búsqueda global', en: 'Global search' },
-          subtitle: ''
         },
-        { src: '/StockPro/17-Filter-by-field.webm',
+        { src: '17-Filter-by-field',
           title: { es: 'Filtrar por campos', en: 'Filter by fields' },
-          subtitle: ''
         },
-        { src: '/StockPro/18-Profile.webm',
+        { src: '18-Profile',
           title: { es: 'Perfil', en: 'Profile' },
-          subtitle: ''
         },
-        { src: '/StockPro/19-Preferences-language.webm',
+        { src: '19-Preferences-language',
           title: { es: 'Lenguajes', en: 'Languages' },
-          subtitle: ''
         },
-        { src: '/StockPro/20-Preferences-color-mode.webm',
+        { src: '20-Preferences-color-mode',
           title: { es: 'Tema visual', en: 'Color mode' },
-          subtitle: ''
         },
-        { src: '/StockPro/21-Users.webm',
+        { src: '21-Users',
           title: { es: 'Usuarios', en: 'Users' },
-          subtitle: ''
         },
-        { src: '/StockPro/22-Forgot-password.webm',
+        { src: '22-Forgot-password',
           title: { es: 'Olvidé mi contraseña', en: 'Forgot password' },
-          subtitle: ''
         },
       ],
-      slug: 'stockpro',
     },
     {
       image: "/Great-expensecontrolheroimage.png",
       tags: ["React.js", "TypeScript", "Node.js", "CSS"],
       github: "https://github.com/rodrigojmayer/expense_control_frontend",
       demo: "https://expense-control-frontend.onrender.com/",
-      // video: '/ExpenseControl/01-Start-page.webm',
+      slug: 'expensecontrol',
       videos: [
-        { src: '/ExpenseControl/01-Start-page.webm',
+        { src: '01-Start-page',
           title: { es: 'Pagina de inicio', en: 'Start page' },
-          subtitle: '01-Start-page'
         },
-        { src: '/ExpenseControl/02-Payment-method-page.webm',
+        { src: '02-Payment-method-page',
           title: { es: 'Método de pago', en: 'Payment method' },
-          subtitle: '02-Payment-method-page'
         },
-        { src: '/ExpenseControl/03-Articles-page.webm',
+        { src: '03-Articles-page',
           title: { es: 'Página de artículos', en: 'Articles page' },
-          subtitle: '03-Articles-page'
         },
-        { src: '/ExpenseControl/04-Create-new-article.webm',
+        { src: '04-Create-new-article',
           title: { es: 'Crear nuevo artículo', en: 'Create new article' },
-          subtitle: '04-Create-new-article'
         },
-        { src: '/ExpenseControl/05-Create-new-group.webm',
+        { src: '05-Create-new-group',
           title: { es: 'Crear nuevo grupo', en: 'Create new group' },
-          subtitle: '05-Create-new-group'
         },
-        { src: '/ExpenseControl/06-Edit-article.webm',
+        { src: '06-Edit-article',
           title: { es: 'Editar artículo', en: 'Edit article' },
-          subtitle: '06-Edit-article'
         },
-        { src: '/ExpenseControl/07-Delete-article.webm',
+        { src: '07-Delete-article',
           title: { es: 'Eliminar artículo', en: 'Delete article' },
-          subtitle: '07-Delete-article'
         },
-        { src: '/ExpenseControl/08-Edit-group.webm',
+        { src: '08-Edit-group',
           title: { es: 'Editar grupo', en: 'Edit group' },
-          subtitle: '08-Edit-group'
         },
-        { src: '/ExpenseControl/09-Delete-group.webm',
+        { src: '09-Delete-group',
           title: { es: 'Eliminar grupo', en: 'Delete group' },
-          subtitle: '09-Delete-group'
         },
-        { src: '/ExpenseControl/10-Select-articles.webm',
+        { src: '10-Select-articles',
           title: { es: 'Seleccionar artículos', en: 'Select articles' },
-          subtitle: '10-Select-articles'
         },
-        { src: '/ExpenseControl/11-Cart-page.webm',
+        { src: '11-Cart-page',
           title: { es: 'Vista previa del carrito', en: 'Cart preview page' },
-          subtitle: '11-Cart-page'
         },
-        { src: '/ExpenseControl/12-Export-transaction.webm',
+        { src: '12-Export-transaction',
           title: { es: 'Exportar transacción', en: 'Export transaction' },
-          subtitle: '12-Export-transaction'
         }
       ],
-
-      // title 
-      slug: 'expensecontrol',
     },
     {
       image: "/analytics-dashboard.png",
