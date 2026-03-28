@@ -270,7 +270,7 @@ export function Projects() {
                                         )}
                                           <video
                                             ref={videoRef}
-                                            src={video.src}
+                                            src={`/${activeProject.slug}/${video.src}.webm`}
                                             controls={isActive}
                                             playsInline
                                             muted
@@ -284,7 +284,7 @@ export function Projects() {
                                             `}
                                           >
                                           <track
-                                            src={`/ExpenseControl/subtitles/${video.subtitle}-${language}.vtt`}
+                                            src={`/${activeProject.slug}/subtitles/${video.src}-${language}.vtt`}
                                             kind="subtitles"
                                             srcLang="es"
                                             label="Español"
