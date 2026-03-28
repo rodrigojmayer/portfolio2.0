@@ -1,0 +1,22 @@
+WEBVTT
+STYLE
+::cue {
+background: rgba(0, 0, 0, 0.4);
+color: white;
+font-size: 18px;
+}
+
+00:00:00.000 --> 00:00:03.000 line:80% position:20% align:start
+Open the sorting option.
+
+00:00:03.000 --> 00:00:06.000 line:80% position:20% align:start
+Select the field to sort by.
+
+00:00:06.000 --> 00:00:09.000 line:80% position:20% align:start
+Apply ascending or descending order.
+
+00:00:09.000 --> 00:00:12.000 line:80% position:20% align:start
+Products are automatically rearranged.
+
+00:00:12.000 --> 00:00:15.000 line:80% position:20% align:start
+View the data based on the chosen criteria.
