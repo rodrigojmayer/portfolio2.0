@@ -6,29 +6,95 @@ export const projects = [
       github: "https://github.com/rodrigojmayer/stockpro",
       demo: 'https://stockpro-deploy.onrender.com/',
       // video: '/StockPro/01-Main-page.webm',
-      video: [
-        '/StockPro/01-Main-page.webm',
-        '/StockPro/02-Sign-up.webm',
-        '/StockPro/03-Log-in-with-user-pass.webm',
-        '/StockPro/04-Log-in-with-gmail.webm',
-        '/StockPro/05-Create-stock.webm',
-        '/StockPro/06-Update-amount.webm',
-        '/StockPro/07-Edit-stock.webm',
-        '/StockPro/08-Delete-stock.webm',
-        '/StockPro/09-Massive-update-amount.webm',
-        '/StockPro/10-Alert-by-amount.webm',
-        '/StockPro/11-Alert-by-date.webm',
-        '/StockPro/12-Alerts-on-top.webm',
-        '/StockPro/13-Manage-columns.webm',
-        '/StockPro/14-Custom-fields.webm',
-        '/StockPro/15-Order-stock.webm',
-        '/StockPro/16-Global-search.webm',
-        '/StockPro/17-Filter-by-field.webm',
-        '/StockPro/18-Profile.webm',
-        '/StockPro/19-Preferences-language.webm',
-        '/StockPro/20-Preferences-color-mode.webm',
-        '/StockPro/21-Users.webm',
-        '/StockPro/22-Forgot-password.webm',
+      videos: [
+        { src: '/StockPro/01-Main-page.webm',
+          title: { es: '', en: '' },
+          subtitle: ''
+        },
+        { src: '/StockPro/02-Sign-up.webm',
+          title: { es: '', en: '' },
+          subtitle: ''
+        },
+        { src: '/StockPro/03-Log-in-with-user-pass.webm',
+          title: { es: '', en: '' },
+          subtitle: ''
+        },
+        { src: '/StockPro/04-Log-in-with-gmail.webm',
+          title: { es: '', en: '' },
+          subtitle: ''
+        },
+        { src: '/StockPro/05-Create-stock.webm',
+          title: { es: '', en: '' },
+          subtitle: ''
+        },
+        { src: '/StockPro/06-Update-amount.webm',
+          title: { es: '', en: '' },
+          subtitle: ''
+        },
+        { src: '/StockPro/07-Edit-stock.webm',
+          title: { es: '', en: '' },
+          subtitle: ''
+        },
+        { src: '/StockPro/08-Delete-stock.webm',
+          title: { es: '', en: '' },
+          subtitle: ''
+        },
+        { src: '/StockPro/09-Massive-update-amount.webm',
+          title: { es: '', en: '' },
+          subtitle: ''
+        },
+        { src: '/StockPro/10-Alert-by-amount.webm',
+          title: { es: '', en: '' },
+          subtitle: ''
+        },
+        { src: '/StockPro/11-Alert-by-date.webm',
+          title: { es: '', en: '' },
+          subtitle: ''
+        },
+        { src: '/StockPro/12-Alerts-on-top.webm',
+          title: { es: '', en: '' },
+          subtitle: ''
+        },
+        { src: '/StockPro/13-Manage-columns.webm',
+          title: { es: '', en: '' },
+          subtitle: ''
+        },
+        { src: '/StockPro/14-Custom-fields.webm',
+          title: { es: '', en: '' },
+          subtitle: ''
+        },
+        { src: '/StockPro/15-Order-stock.webm',
+          title: { es: '', en: '' },
+          subtitle: ''
+        },
+        { src: '/StockPro/16-Global-search.webm',
+          title: { es: '', en: '' },
+          subtitle: ''
+        },
+        { src: '/StockPro/17-Filter-by-field.webm',
+          title: { es: '', en: '' },
+          subtitle: ''
+        },
+        { src: '/StockPro/18-Profile.webm',
+          title: { es: '', en: '' },
+          subtitle: ''
+        },
+        { src: '/StockPro/19-Preferences-language.webm',
+          title: { es: '', en: '' },
+          subtitle: ''
+        },
+        { src: '/StockPro/20-Preferences-color-mode.webm',
+          title: { es: '', en: '' },
+          subtitle: ''
+        },
+        { src: '/StockPro/21-Users.webm',
+          title: { es: '', en: '' },
+          subtitle: ''
+        },
+        { src: '/StockPro/22-Forgot-password.webm',
+          title: { es: '', en: '' },
+          subtitle: ''
+        },
       ],
       slug: 'stockpro',
     },
