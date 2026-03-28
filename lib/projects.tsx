@@ -8,91 +8,91 @@ export const projects = [
       // video: '/StockPro/01-Main-page.webm',
       videos: [
         { src: '/StockPro/01-Main-page.webm',
-          title: { es: '', en: '' },
+          title: { es: 'Página principal sin inicio de sesión', en: 'Main page unlogged' },
           subtitle: ''
         },
         { src: '/StockPro/02-Sign-up.webm',
-          title: { es: '', en: '' },
+          title: { es: 'Página de registro', en: 'Sign up' },
           subtitle: ''
         },
         { src: '/StockPro/03-Log-in-with-user-pass.webm',
-          title: { es: '', en: '' },
+          title: { es: 'Iniciar sesión con usuario y contraseña', en: 'Log in with user and password' },
           subtitle: ''
         },
         { src: '/StockPro/04-Log-in-with-gmail.webm',
-          title: { es: '', en: '' },
+          title: { es: 'Registro automático e inicio de sesión con Gmail', en: 'Automatic registration and login with Gmail' },
           subtitle: ''
         },
         { src: '/StockPro/05-Create-stock.webm',
-          title: { es: '', en: '' },
+          title: { es: 'Crear nuevo stock', en: 'Create new stock' },
           subtitle: ''
         },
         { src: '/StockPro/06-Update-amount.webm',
-          title: { es: '', en: '' },
+          title: { es: 'Actualizar cantidad', en: 'Update amount' },
           subtitle: ''
         },
         { src: '/StockPro/07-Edit-stock.webm',
-          title: { es: '', en: '' },
+          title: { es: 'Editar stock', en: 'Edit stock' },
           subtitle: ''
         },
         { src: '/StockPro/08-Delete-stock.webm',
-          title: { es: '', en: '' },
+          title: { es: 'Eliminar stock', en: 'Delete stock' },
           subtitle: ''
         },
         { src: '/StockPro/09-Massive-update-amount.webm',
-          title: { es: '', en: '' },
+          title: { es: 'Actualización masiva de cantidad', en: 'Massive update amount' },
           subtitle: ''
         },
         { src: '/StockPro/10-Alert-by-amount.webm',
-          title: { es: '', en: '' },
+          title: { es: 'Alerta por cantidad', en: 'Alert by amount' },
           subtitle: ''
         },
         { src: '/StockPro/11-Alert-by-date.webm',
-          title: { es: '', en: '' },
+          title: { es: 'Alerta por fecha', en: 'Alert by date' },
           subtitle: ''
         },
         { src: '/StockPro/12-Alerts-on-top.webm',
-          title: { es: '', en: '' },
+          title: { es: 'Alertas en la parte superior', en: 'Alerts on top' },
           subtitle: ''
         },
         { src: '/StockPro/13-Manage-columns.webm',
-          title: { es: '', en: '' },
+          title: { es: 'Administrar columnas', en: 'Manage columns' },
           subtitle: ''
         },
         { src: '/StockPro/14-Custom-fields.webm',
-          title: { es: '', en: '' },
+          title: { es: 'Campos personalizados', en: 'Custom fields' },
           subtitle: ''
         },
         { src: '/StockPro/15-Order-stock.webm',
-          title: { es: '', en: '' },
+          title: { es: 'Ordenar stock', en: 'Order stock' },
           subtitle: ''
         },
         { src: '/StockPro/16-Global-search.webm',
-          title: { es: '', en: '' },
+          title: { es: 'Búsqueda global', en: 'Global search' },
           subtitle: ''
         },
         { src: '/StockPro/17-Filter-by-field.webm',
-          title: { es: '', en: '' },
+          title: { es: 'Filtrar por campos', en: 'Filter by fields' },
           subtitle: ''
         },
         { src: '/StockPro/18-Profile.webm',
-          title: { es: '', en: '' },
+          title: { es: 'Perfil', en: 'Profile' },
           subtitle: ''
         },
         { src: '/StockPro/19-Preferences-language.webm',
-          title: { es: '', en: '' },
+          title: { es: 'Lenguajes', en: 'Languages' },
           subtitle: ''
         },
         { src: '/StockPro/20-Preferences-color-mode.webm',
-          title: { es: '', en: '' },
+          title: { es: 'Tema visual', en: 'Color mode' },
           subtitle: ''
         },
         { src: '/StockPro/21-Users.webm',
-          title: { es: '', en: '' },
+          title: { es: 'Usuarios', en: 'Users' },
           subtitle: ''
         },
         { src: '/StockPro/22-Forgot-password.webm',
-          title: { es: '', en: '' },
+          title: { es: 'Olvidé mi contraseña', en: 'Forgot password' },
           subtitle: ''
         },
       ],
