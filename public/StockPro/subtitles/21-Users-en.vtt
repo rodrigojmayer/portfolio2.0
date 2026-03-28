@@ -1,0 +1,25 @@
+WEBVTT
+STYLE
+::cue {
+background: rgba(0, 0, 0, 0.4);
+color: white;
+font-size: 18px;
+}
+
+00:00:00.000 --> 00:00:03.000 line:80% position:20% align:start
+Open user management.
+
+00:00:03.000 --> 00:00:06.000 line:80% position:20% align:start
+The list of registered users is displayed.
+
+00:00:06.000 --> 00:00:09.000 line:80% position:20% align:start
+Select a user to edit.
+
+00:00:09.000 --> 00:00:12.000 line:80% position:20% align:start
+Configure access permissions.
+
+00:00:12.000 --> 00:00:15.000 line:80% position:20% align:start
+Update user information.
+
+00:00:15.000 --> 00:00:18.000 line:80% position:20% align:start
+Save the changes made.
