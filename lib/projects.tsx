@@ -120,6 +120,18 @@ export const projects = [
       ],
     },
     {
+      image: "/networkimage12.png",
+      tags: ["Python", "Django", "Java Script"],
+      github: "https://github.com/rodrigojmayer/expense_control_frontend",
+      demo: "https://expense-control-frontend.onrender.com/",
+      slug: 'network',
+      videos: [
+        { src: '01-Start-page',
+          title: { es: 'Pagina de inicio', en: 'Start page' },
+        },
+      ],
+    },
+    {
       image: "/analytics-dashboard.png",
       tags: ["React", "D3.js", "Express", "AWS"],
       github: "#",
