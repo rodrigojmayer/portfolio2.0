@@ -52,6 +52,7 @@ export const translations = {
       subtitle: "A selection of my recent work and personal projects",
       code: "Code",
       demo: "Demo",
+      close: "Close",
       items: [
         {
           title: "StockPro",
@@ -156,6 +157,7 @@ export const translations = {
       subtitle: "Una selección de mi trabajo reciente y proyectos personales",
       code: "Código",
       demo: "Demo",
+      close: "Cerrar",
       items: [
         {
           title: "StockPro",

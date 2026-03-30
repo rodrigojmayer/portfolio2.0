@@ -148,7 +148,7 @@ export function Projects() {
 
                         "
                       >
-                        Close
+                        {t.projects.close}
                       </button>
                     </div>
 
