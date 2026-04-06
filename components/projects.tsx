@@ -96,7 +96,7 @@ export function Projects() {
                           {t.projects.code}
                         </a>
                       </Button>
-                      <Button size="sm" asChild className="flex-1">
+                      <Button size="sm" asChild className="flex-1" onClick={(e) => e.stopPropagation()}>
                         <a href={project.demo} target="_blank" rel="noopener noreferrer">
                           <ExternalLink className="mr-2 h-4 w-4" />
                           {t.projects.demo}
