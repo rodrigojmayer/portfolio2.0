@@ -1,0 +1,27 @@
+WEBVTT
+STYLE
+::cue {
+background: rgba(0, 0, 0, 0.6);
+color: white;
+font-size: 18px;
+}
+
+00:00:00.000 --> 00:00:05.500 line:80% position:20% align:start
+The system allows you to filter the posts
+you are looking for using keywords.
+
+00:00:05.500 --> 00:00:11.000 line:80% position:20% align:start
+Click the magnifying glass icon in the
+bottom menu to display the search bar.
+
+00:00:11.000 --> 00:00:16.500 line:80% position:20% align:start
+When typing a term, like "john", the feed
+updates to show only related posts.
+
+00:00:16.500 --> 00:00:22.000 line:80% position:20% align:start
+You can search by username or by
+specific content within the messages.
+
+00:00:22.000 --> 00:00:27.000 line:80% position:20% align:start
+Clear the text to reset the feed
+or enter a new custom search.

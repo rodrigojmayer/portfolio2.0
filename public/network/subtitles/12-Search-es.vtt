@@ -1,0 +1,27 @@
+WEBVTT
+STYLE
+::cue {
+background: rgba(0, 0, 0, 0.6);
+color: white;
+font-size: 18px;
+}
+
+00:00:00.000 --> 00:00:05.500 line:80% position:20% align:start
+El sistema permite filtrar las publicaciones
+que estás buscando mediante palabras clave.
+
+00:00:05.500 --> 00:00:11.000 line:80% position:20% align:start
+Haz clic en el icono de la lupa en el menú
+inferior para desplegar la barra de búsqueda.
+
+00:00:11.000 --> 00:00:16.500 line:80% position:20% align:start
+Al escribir un término, como "john", el feed
+se actualiza para mostrar solo posts relacionados.
+
+00:00:16.500 --> 00:00:22.000 line:80% position:20% align:start
+Puedes buscar por nombre de usuario o por
+contenido específico dentro de los mensajes.
+
+00:00:22.000 --> 00:00:27.000 line:80% position:20% align:start
+Borra el texto para restablecer el feed
+o introduce una nueva búsqueda personalizada.
