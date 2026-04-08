@@ -237,16 +237,28 @@ export function Projects() {
                                 >
                                 {({ isActive }) => { // Usamos el render prop de Swiper para manejar estados
                                   const videoRef = React.useRef<HTMLVideoElement>(null)
+                                  // Estado para controlar si el video terminó
+                                  const [hasEnded, setHasEnded] = React.useState(false);
 
                                   React.useEffect(() => {
                                     if(!videoRef.current) return
                                     if(isActive) {
+                                      setHasEnded(false); // Resetear estado al activar
                                       videoRef.current.play()
                                     } else {
                                       videoRef.current.pause()
                                       videoRef.current.currentTime = 0 // reset to start
+                                      setHasEnded(false);
                                     }
                                   }, [isActive])
+                                  
+                                  const handleReplay = () => {
+                                    if (videoRef.current) {
+                                      setHasEnded(false);
+                                      videoRef.current.currentTime = 0;
+                                      videoRef.current.play();
+                                    }
+                                  };
 
                                   return(                               
                                     <div 
@@ -271,11 +283,13 @@ export function Projects() {
                                           <video
                                             ref={videoRef}
                                             src={`/${activeProject.slug}/${video.src}.webm`}
-                                            controls={isActive}
+                                            // controls={isActive}
+                                            controls={isActive && !hasEnded} // Ocultar controles nativos si terminó para mostrar nuestro botón
                                             playsInline
                                             muted
                                             // autoPlay={isActive}
-                                            loop
+                                            // loop
+                                            onEnded={() => setHasEnded(true)}
                                             className={`
                                               carousel-video rounded-xl shadow-xl border-2 border-primary/20
                                               w-full h-full 
@@ -291,6 +305,25 @@ export function Projects() {
                                             default
                                           />
                                           </video>
+                                          
+                                          {/* BOTÓN DE REPETIR (Solo si está activo y terminó) */}
+                                          {isActive && hasEnded && (
+                                            <div className="absolute inset-0 flex items-center justify-center z-20 bg-black/20 rounded-xl transition-opacity">
+                                              <button 
+                                                onClick={handleReplay}
+                                                className="bg-black/70 hover:bg-black/50 p-4 rounded-full backdrop-blur-md border border-white/50 transition-all transform hover:scale-110 cursor-pointer"
+                                                title="Replay"
+                                              >
+                                                <svg 
+                                                  viewBox="0 0 24 24" 
+                                                  className="w-12 h-12 text-white fill-current"
+                                                >
+                                                  <path d="M12 5V1L7 6L12 11V7C15.31 7 18 9.69 18 13C18 16.31 15.31 19 12 19C8.69 19 6 16.31 6 13H4C4 17.42 7.58 21 12 21C16.42 21 20 17.42 20 13C20 8.58 16.42 5 12 5Z" />
+                                                </svg>
+                                              </button>
+                                            </div>
+                                          )}
+
                                           {/* TEXTO SOBRE EL VIDEO */}
                                           <div className="absolute top-2 left-2">
                                             <p className="text-white text-sm md:text-base font-semibold bg-black/40 px-3 py-1 rounded-lg inline-block">
