@@ -1,0 +1,27 @@
+WEBVTT
+STYLE
+::cue {
+background: rgba(0, 0, 0, 0.6);
+color: white;
+font-size: 18px;
+}
+
+00:00:00.000 --> 00:00:04.500 line:80% position:20% align:start
+The user selects "Edit Profile" to
+open the settings modal.
+
+00:00:04.500 --> 00:00:09.500 line:80% position:20% align:start
+Username, email, password, and
+profile picture can be modified.
+
+00:00:09.500 --> 00:00:15.500 line:80% position:20% align:start
+The user updates the name to "LeoDV"
+and selects a new profile image.
+
+00:00:15.500 --> 00:00:21.000 line:80% position:20% align:start
+A summary of changes is displayed.
+After accepting, the profile updates.
+
+00:00:21.000 --> 00:00:26.000 line:80% position:20% align:start
+The profile now reflects the new visual
+identity and the updated username.
