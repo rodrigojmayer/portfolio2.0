@@ -1,0 +1,23 @@
+WEBVTT
+STYLE
+::cue {
+background: rgba(0, 0, 0, 0.6);
+color: white;
+font-size: 18px;
+}
+
+00:00:00.000 --> 00:00:06.000 line:80% position:20% align:start
+Página de inicio antes de iniciar sesión.
+Puede ver todas las publicaciones existentes...
+
+00:00:06.000 --> 00:00:12.000 line:80% position:20% align:start
+...pero no es posible
+interactuar con ellas.
+
+00:00:12.000 --> 00:00:16.500 line:80% position:20% align:start
+El usuario intenta dar "Like" y el sistema
+muestra una excepción de seguridad.
+
+00:00:16.500 --> 00:00:21.000 line:80% position:20% align:start
+Mensaje de error:
+"Debe estar autenticado".

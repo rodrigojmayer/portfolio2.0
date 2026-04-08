@@ -1,0 +1,23 @@
+WEBVTT
+STYLE
+::cue {
+background: rgba(0, 0, 0, 0.6);
+color: white;
+font-size: 18px;
+}
+
+00:00:00.000 --> 00:00:06.000 line:80% position:20% align:start
+Start page before logging in.
+You can see all existing posts...
+
+00:00:06.000 --> 00:00:12.000 line:80% position:20% align:start
+...but you cannot
+interact with them.
+
+00:00:12.000 --> 00:00:16.500 line:80% position:20% align:start
+User attempts to "Like" a post and
+the system triggers an exception.
+
+00:00:16.500 --> 00:00:21.000 line:80% position:20% align:start
+Error message:
+"You must be logged-in."
