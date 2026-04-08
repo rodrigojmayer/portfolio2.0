@@ -1,0 +1,23 @@
+WEBVTT
+STYLE
+::cue {
+background: rgba(0, 0, 0, 0.6);
+color: white;
+font-size: 18px;
+}
+
+00:00:00.000 --> 00:00:04.500 line:80% position:20% align:start
+The user accesses their personal profile
+from the bottom right menu.
+
+00:00:04.500 --> 00:00:09.000 line:80% position:20% align:start
+Here you can view your own posts
+and follower/following statistics.
+
+00:00:09.000 --> 00:00:13.000 line:80% position:20% align:start
+The profile displays the email address
+and the "Edit Profile" button.
+
+00:00:13.000 --> 00:00:17.000 line:80% position:20% align:start
+The profile centralizes all activity
+and user information on the network.
