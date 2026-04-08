@@ -1,0 +1,23 @@
+WEBVTT
+STYLE
+::cue {
+background: rgba(0, 0, 0, 0.6);
+color: white;
+font-size: 18px;
+}
+
+00:00:00.000 --> 00:00:04.000 line:80% position:20% align:start
+Users can edit their own
+posts at any time.
+
+00:00:04.000 --> 00:00:08.500 line:80% position:20% align:start
+By clicking "Edit", the text becomes
+editable within the post card.
+
+00:00:08.500 --> 00:00:13.000 line:80% position:20% align:start
+The content is corrected and "Save"
+is pressed to apply the changes.
+
+00:00:13.000 --> 00:00:17.000 line:80% position:20% align:start
+The post is immediately updated
+with the new text.

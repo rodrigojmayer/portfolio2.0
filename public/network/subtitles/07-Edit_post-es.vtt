@@ -1,0 +1,23 @@
+WEBVTT
+STYLE
+::cue {
+background: rgba(0, 0, 0, 0.6);
+color: white;
+font-size: 18px;
+}
+
+00:00:00.000 --> 00:00:04.000 line:80% position:20% align:start
+El usuario puede editar sus propias
+publicaciones en cualquier momento.
+
+00:00:04.000 --> 00:00:08.500 line:80% position:20% align:start
+Al hacer clic en "Edit", el texto se
+vuelve editable dentro del post.
+
+00:00:08.500 --> 00:00:13.000 line:80% position:20% align:start
+Se corrige el contenido y se presiona
+"Save" para aplicar los cambios.
+
+00:00:13.000 --> 00:00:17.000 line:80% position:20% align:start
+La publicación se actualiza de forma
+inmediata con el nuevo texto.
