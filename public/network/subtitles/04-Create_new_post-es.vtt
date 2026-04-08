@@ -1,0 +1,23 @@
+WEBVTT
+STYLE
+::cue {
+background: rgba(0, 0, 0, 0.6);
+color: white;
+font-size: 18px;
+}
+
+00:00:00.000 --> 00:00:04.000 line:80% position:20% align:start
+El usuario selecciona el icono "+"
+para crear una nueva publicación.
+
+00:00:04.000 --> 00:00:09.000 line:80% position:20% align:start
+Se abre un modal donde se redacta
+el contenido del mensaje.
+
+00:00:09.000 --> 00:00:13.500 line:80% position:20% align:start
+Tras hacer clic en "Submit", la nueva
+publicación aparece al inicio del feed.
+
+00:00:13.500 --> 00:00:18.000 line:80% position:20% align:start
+El post incluye la opción de "Edit"
+por ser contenido propio del usuario.
