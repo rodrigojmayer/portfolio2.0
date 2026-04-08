@@ -1,0 +1,31 @@
+WEBVTT
+STYLE
+::cue {
+background: rgba(0, 0, 0, 0.6);
+color: white;
+font-size: 18px;
+}
+
+00:00:00.000 --> 00:00:05.500 line:80% position:20% align:start
+The entire page adjusts perfectly to
+mobile screen sizes.
+
+00:00:05.500 --> 00:00:11.000 line:80% position:20% align:start
+The interface becomes more compact,
+optimizing space for reading.
+
+00:00:11.000 --> 00:00:16.500 line:80% position:20% align:start
+The floating button to create posts (+)
+is placed in a comfortable thumb position.
+
+00:00:16.500 --> 00:00:22.000 line:80% position:20% align:start
+Profile navigation and the following
+system work seamlessly.
+
+00:00:22.000 --> 00:00:27.500 line:80% position:20% align:start
+"Following" lists and search filters are
+reorganized for better viewing.
+
+00:00:27.500 --> 00:00:33.000 line:80% position:20% align:start
+Even on small screens, the user experience
+remains intact and functional.

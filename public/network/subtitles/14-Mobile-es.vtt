@@ -1,0 +1,31 @@
+WEBVTT
+STYLE
+::cue {
+background: rgba(0, 0, 0, 0.6);
+color: white;
+font-size: 18px;
+}
+
+00:00:00.000 --> 00:00:05.500 line:80% position:20% align:start
+Toda la página se ajusta perfectamente al
+tamaño de las pantallas de los móviles.
+
+00:00:05.500 --> 00:00:11.000 line:80% position:20% align:start
+La interfaz se vuelve más compacta,
+optimizando el espacio para la lectura.
+
+00:00:11.000 --> 00:00:16.500 line:80% position:20% align:start
+El botón flotante para crear posts (+)
+se sitúa en una posición cómoda para el pulgar.
+
+00:00:16.500 --> 00:00:22.000 line:80% position:20% align:start
+La navegación por perfiles y el sistema de
+seguimiento funcionan de forma fluida.
+
+00:00:22.000 --> 00:00:27.500 line:80% position:20% align:start
+Las listas de "Following" y los filtros de búsqueda
+se reorganizan para una mejor visualización.
+
+00:00:27.500 --> 00:00:33.000 line:80% position:20% align:start
+Incluso en pantallas pequeñas, la experiencia
+de usuario se mantiene intacta y funcional.
