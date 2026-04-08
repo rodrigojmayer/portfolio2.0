@@ -1,0 +1,27 @@
+WEBVTT
+STYLE
+::cue {
+background: rgba(0, 0, 0, 0.6);
+color: white;
+font-size: 18px;
+}
+
+00:00:00.000 --> 00:00:03.000 line:80% position:20% align:start
+Permite a los usuarios registrarse
+y obtener acceso a la red social.
+
+00:00:03.000 --> 00:00:08.000 line:80% position:20% align:start
+El usuario ingresa su nombre
+y correo electrónico de contacto.
+
+00:00:08.000 --> 00:00:14.000 line:80% position:20% align:start
+Se define una contraseña segura
+y se confirma en el formulario.
+
+00:00:14.000 --> 00:00:20.000 line:80% position:20% align:start
+Tras completar los datos, el usuario
+hace clic en el botón "Register".
+
+00:00:20.000 --> 00:00:25.000 line:80% position:20% align:start
+Registro exitoso. El usuario ahora
+tiene acceso total a la plataforma.
