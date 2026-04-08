@@ -1,0 +1,23 @@
+WEBVTT
+STYLE
+::cue {
+background: rgba(0, 0, 0, 0.6);
+color: white;
+font-size: 18px;
+}
+
+00:00:00.000 --> 00:00:06.000 line:80% position:20% align:start
+Common login screen.
+The user accesses it from the bottom menu.
+
+00:00:06.000 --> 00:00:11.000 line:80% position:20% align:start
+The user must enter their username
+and the corresponding password.
+
+00:00:11.000 --> 00:00:16.000 line:80% position:20% align:start
+After completing the fields, the user
+clicks the "Login" button.
+
+00:00:16.000 --> 00:00:20.000 line:80% position:20% align:start
+Logged in. The system redirects
+the user to the main page.

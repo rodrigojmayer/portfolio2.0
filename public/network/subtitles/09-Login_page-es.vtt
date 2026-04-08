@@ -1,0 +1,23 @@
+WEBVTT
+STYLE
+::cue {
+background: rgba(0, 0, 0, 0.6);
+color: white;
+font-size: 18px;
+}
+
+00:00:00.000 --> 00:00:06.000 line:80% position:20% align:start
+Pantalla de inicio de sesión común.
+El usuario accede desde el menú inferior.
+
+00:00:06.000 --> 00:00:11.000 line:80% position:20% align:start
+Debe ingresar su nombre de usuario
+y la contraseña correspondiente.
+
+00:00:11.000 --> 00:00:16.000 line:80% position:20% align:start
+Tras completar los campos, se hace
+clic en el botón "Login".
+
+00:00:16.000 --> 00:00:20.000 line:80% position:20% align:start
+Sesión iniciada. El sistema redirige
+al usuario a la página principal.
