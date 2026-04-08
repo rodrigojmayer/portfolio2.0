@@ -203,3 +203,14 @@ html {
   background: var(--primary) !important;
   opacity: 1;
 }
+.swiper-slide {
+  pointer-events: auto;
+}
+
+.swiper-slide-active {
+  pointer-events: auto;
+  z-index: 999 !important;
+}
+.swiper-wrapper {
+  pointer-events: none;
+}

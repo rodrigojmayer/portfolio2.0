@@ -280,6 +280,9 @@ export function Projects() {
                                         {!isActive && (
                                           <div className="absolute inset-0 z-10" />
                                         )}
+                                        {/* {!isActive && (
+                                          <div className="absolute inset-0 z-10 pointer-events-none" />
+                                        )} */}
                                           <video
                                             ref={videoRef}
                                             src={`/${activeProject.slug}/${video.src}.webm`}
