@@ -1,0 +1,23 @@
+WEBVTT
+STYLE
+::cue {
+background: rgba(0, 0, 0, 0.6);
+color: white;
+font-size: 18px;
+}
+
+00:00:00.000 --> 00:00:05.000 line:80% position:20% align:start
+The system assigns default profile pictures
+based on the name's first letter.
+
+00:00:05.000 --> 00:00:10.000 line:80% position:20% align:start
+However, users with the same letter
+will have different colors or images.
+
+00:00:10.000 --> 00:00:14.000 line:80% position:20% align:start
+This allows for easy differentiation of
+authors, even if they share an initial.
+
+00:00:14.000 --> 00:00:18.000 line:80% position:20% align:start
+Visual identity remains unique for
+each account within the platform.
