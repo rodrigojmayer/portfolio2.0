@@ -1,0 +1,27 @@
+WEBVTT
+STYLE
+::cue {
+background: rgba(0, 0, 0, 0.6);
+color: white;
+font-size: 18px;
+}
+
+00:00:00.000 --> 00:00:06.000 line:80% position:20% align:start
+The entire page adapts perfectly to
+tablet screen sizes.
+
+00:00:06.000 --> 00:00:12.000 line:80% position:20% align:start
+Feed elements are reorganized to
+maintain readability and ease of use.
+
+00:00:12.000 --> 00:00:18.000 line:80% position:20% align:start
+Bottom navigation and action buttons
+are easily accessible for touch.
+
+00:00:18.000 --> 00:00:24.000 line:80% position:20% align:start
+The "Following" and "Liked Posts" sections
+maintain a clear and fluid structure.
+
+00:00:24.000 --> 00:00:30.000 line:80% position:20% align:start
+Even the search and profile editing features
+adjust to the device width.
