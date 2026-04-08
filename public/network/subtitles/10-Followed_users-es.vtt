@@ -1,0 +1,23 @@
+WEBVTT
+STYLE
+::cue {
+background: rgba(0, 0, 0, 0.6);
+color: white;
+font-size: 18px;
+}
+
+00:00:00.000 --> 00:00:05.000 line:80% position:20% align:start
+En esta página puedes ver las publicaciones
+de todos los usuarios que sigues.
+
+00:00:05.000 --> 00:00:10.000 line:80% position:20% align:start
+Para que aparezcan aquí, primero debes
+ir al perfil de un usuario y darle a "Follow".
+
+00:00:10.000 --> 00:00:15.000 line:80% position:20% align:start
+Una vez que los sigues, sus mensajes se
+agrupan en esta sección dedicada.
+
+00:00:15.000 --> 00:00:20.000 line:80% position:20% align:start
+Puedes acceder a este feed personalizado
+desde el icono de la estrella en el menú.
