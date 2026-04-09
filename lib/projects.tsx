@@ -123,7 +123,7 @@ export const projects = [
       image: "/networkimage12.png",
       tags: ["Python", "Django", "Java Script"],
       github: "https://github.com/rodrigojmayer/expense_control_frontend",
-      demo: "https://expense-control-frontend.onrender.com/",
+      demo: "https://rjmnetwork.onrender.com/",
       slug: 'network',
       videos: [
         { src: '01-Main_page_unlogged',
