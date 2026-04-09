@@ -122,7 +122,7 @@ export const projects = [
     {
       image: "/networkimage12.png",
       tags: ["Python", "Django", "Java Script"],
-      github: "https://github.com/rodrigojmayer/expense_control_frontend",
+      github: "https://github.com/rodrigojmayer/RJMNetwork",
       demo: "https://rjmnetwork.onrender.com/",
       slug: 'network',
       videos: [
@@ -172,8 +172,8 @@ export const projects = [
     },
     {
       image: "/analytics-dashboard.png",
-      tags: ["React", "D3.js", "Express", "AWS"],
-      github: "#",
+      tags: ["Python", "Django", "HTML", "JavaScript", "CSS", "SCSS", "PowerShell"],
+      github: "https://github.com/rodrigojmayer/AuctionsProject",
       demo: "https://rjmauctions.onrender.com",
       slug: 'auctions',
       videos: [
