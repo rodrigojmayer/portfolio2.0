@@ -174,7 +174,7 @@ export const projects = [
       image: "/analytics-dashboard.png",
       tags: ["React", "D3.js", "Express", "AWS"],
       github: "#",
-      demo: "#",
+      demo: "https://rjmauctions.onrender.com",
       slug: 'auctions',
       videos: [
         { src: '01-Active_listings_without_log_in',
