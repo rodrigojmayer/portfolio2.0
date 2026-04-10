@@ -183,12 +183,12 @@ export const translations = {
             'Aplicación web para una red social tipo Twitter donde los usuarios pueden crear publicaciones, seguir perfiles y explorar contenido en la página principal. Permite dar "me gusta", ver feeds como "Siguiendo" y "Me gusta", y editar publicaciones e información, incluyendo imágenes o avatares generados automáticamente.',
         },
         {
-          title: "Panel de Análisis",
+          title: "Auctions",
           description:
             "Panel de visualización de datos con gráficos interactivos y procesamiento de datos en tiempo real",
         },
         {
-          title: "Plataforma de Redes Sociales",
+          title: "Mail",
           description:
             "Una plataforma de redes sociales con perfiles de usuario, publicaciones, comentarios y notificaciones en tiempo real",
         },
