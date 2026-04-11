@@ -135,7 +135,7 @@ export function Projects() {
                       <img
                         src={activeProject.image}
                         className="w-full h-full object-cover"
-                        // style={{ objectPosition: activeProject.imagePositionValues || 'center' }}
+                        style={{ objectPosition: activeProject.imagePositionValues || 'center' }}
                       />
                       <button
                         onClick={() => setActiveProject(null)}
