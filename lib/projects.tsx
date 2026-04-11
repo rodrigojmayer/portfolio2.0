@@ -171,7 +171,8 @@ export const projects = [
       ],
     },
     {
-      image: "/analytics-dashboard.png",
+      image: "/auctionsimage3.jpg",
+      imagePositionValues: "center 27%",
       tags: ["Python", "Django", "HTML", "JavaScript", "CSS", "SCSS", "PowerShell"],
       github: "https://github.com/rodrigojmayer/AuctionsProject",
       demo: "https://rjmauctions.onrender.com",
