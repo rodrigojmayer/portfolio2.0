@@ -135,6 +135,7 @@ export function Projects() {
                       <img
                         src={activeProject.image}
                         className="w-full h-full object-cover"
+                        // style={{ objectPosition: activeProject.imagePositionValues || 'center' }}
                       />
                       <button
                         onClick={() => setActiveProject(null)}
@@ -239,16 +240,30 @@ export function Projects() {
                                   const videoRef = React.useRef<HTMLVideoElement>(null)
                                   // Estado para controlar si el video terminó
                                   const [hasEnded, setHasEnded] = React.useState(false);
-
+                                  const [showTitle, setShowTitle] = React.useState(true)
+                                  const timeoutRef = React.useRef<NodeJS.Timeout | null>(null)
+                                  
                                   React.useEffect(() => {
                                     if(!videoRef.current) return
                                     if(isActive) {
                                       setHasEnded(false); // Resetear estado al activar
                                       videoRef.current.play()
+                                      // Mostrar título al inicio
+                                      setShowTitle(true)
+
+                                      if (timeoutRef.current) clearTimeout(timeoutRef.current)
+
+                                      timeoutRef.current = setTimeout(() => {
+                                        setShowTitle(false)
+                                      }, 3000)
                                     } else {
                                       videoRef.current.pause()
                                       videoRef.current.currentTime = 0 // reset to start
                                       setHasEnded(false);
+                                      setShowTitle(false)
+                                    }
+                                    return () => {
+                                      if (timeoutRef.current) clearTimeout(timeoutRef.current)
                                     }
                                   }, [isActive])
                                   
@@ -267,6 +282,15 @@ export function Projects() {
                                         zIndex: isActive ? 50 : 0,
                                         position: 'relative',
                                         pointerEvents: 'auto' // Permitimos clics en este nivel
+                                      }}
+                                      onMouseEnter={() => {
+                                        setShowTitle(true)
+
+                                        if (timeoutRef.current) clearTimeout(timeoutRef.current)
+
+                                        timeoutRef.current = setTimeout(() => {
+                                          setShowTitle(false)
+                                        }, 3000)
                                       }}
                                     > 
                                       <div 
@@ -328,7 +352,10 @@ export function Projects() {
                                           )}
 
                                           {/* TEXTO SOBRE EL VIDEO */}
-                                          <div className="absolute top-2 left-2">
+                                          <div className={`absolute top-2 left-2 transition-opacity duration-500
+                                              ${showTitle ? "opacity-100" : "opacity-0"}
+                                          `}
+                                          >
                                             <p className="text-white text-sm md:text-base font-semibold bg-black/40 px-3 py-1 rounded-lg inline-block">
                                               {video.title[language as "es" | "en"]}
                                             </p>
