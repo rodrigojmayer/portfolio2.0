@@ -79,6 +79,10 @@ export const translations = {
           title: "Social Media Platform",
           description: "A social networking platform with user profiles, posts, comments, and real-time notifications",
         },
+        {
+          title: "Wiki",
+          description: "A social networking platform with user profiles, posts, comments, and real-time notifications",
+        },
       ],
     },
     contact: {
@@ -189,6 +193,11 @@ export const translations = {
         },
         {
           title: "Mail",
+          description:
+            "Una plataforma de redes sociales con perfiles de usuario, publicaciones, comentarios y notificaciones en tiempo real",
+        },
+        {
+          title: "Wiki",
           description:
             "Una plataforma de redes sociales con perfiles de usuario, publicaciones, comentarios y notificaciones en tiempo real",
         },
