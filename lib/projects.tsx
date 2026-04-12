@@ -226,7 +226,7 @@ export const projects = [
       ],
     },
     {
-      image: "/social-media-app-feed.jpg",
+      image: "/mailimage3.png",
       tags: ["Next.js", "Supabase", "Tailwind", "Vercel"],
       github: "#",
       demo: "#",
