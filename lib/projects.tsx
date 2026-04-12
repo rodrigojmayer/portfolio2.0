@@ -228,8 +228,8 @@ export const projects = [
     {
       image: "/mailimage3.png",
       tags: ["Next.js", "Supabase", "Tailwind", "Vercel"],
-      github: "#",
-      demo: "#",
+      github: "https://github.com/rodrigojmayer/rjmail_pythonanywhere",
+      demo: "https://rjmail.onrender.com/",
       slug: 'mail',
       videos: [
         { src: '01-Sign_up_page',
