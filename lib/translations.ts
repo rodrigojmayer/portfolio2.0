@@ -81,7 +81,7 @@ export const translations = {
         },
         {
           title: "Wiki",
-          description: "A social networking platform with user profiles, posts, comments, and real-time notifications",
+          description: "A collaborative online encyclopedia similar to Wikipedia, fully editable by any user. It offers a comprehensive index of entries, random navigation, and a functional sidebar. Users can easily filter content, create new pages, and edit existing information to keep their shared knowledge base accurate and up-to-date.",
         },
       ],
     },
@@ -199,7 +199,7 @@ export const translations = {
         {
           title: "Wiki",
           description:
-            "Una plataforma de redes sociales con perfiles de usuario, publicaciones, comentarios y notificaciones en tiempo real",
+            'Enciclopedia colaborativa en línea similar a Wikipedia, editable por cualquier usuario. Ofrece un índice completo de entradas, navegación aleatoria y una barra lateral funcional. Permite filtrar o buscar contenido, crear nuevas páginas y editar información existente de manera sencilla para mantener el conocimiento siempre actualizado.',
         },
       ],
     },
