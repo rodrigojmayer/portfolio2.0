@@ -271,7 +271,7 @@ export const projects = [
       ], 
     },
     {
-      image: "/wikiimage.png",
+      image: "/wikiimage5.png",
       tags: ["Next.js", "Supabase", "Tailwind", "Vercel"],
       github: "#",
       demo: "#",
