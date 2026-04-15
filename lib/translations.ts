@@ -73,7 +73,7 @@ export const translations = {
         },
         {
           title: "Auction",
-          description: "Data visualization dashboard with interactive charts and real-time data processing",
+          description: 'An eBay-style auction platform where registered users list items by category, place competitive bids, and manage their Watch List. The system allows interaction with the seller through questions, and the seller has full control over closing the listing. It features a design that is 100% responsive on mobile phones and tablets.',
         },
         {
           title: "Mail",
@@ -189,7 +189,7 @@ export const translations = {
         {
           title: "Auctions",
           description:
-            "Panel de visualización de datos con gráficos interactivos y procesamiento de datos en tiempo real",
+            "Plataforma de subastas tipo eBay donde usuarios registrados publican artículos por categorías, realizan ofertas competitivas y gestionan su Watch List. El sistema permite interactuar mediante preguntas al vendedor, quien posee control total sobre el cierre del listado. Con un diseño 100% adaptable a móviles y tablets.",
         },
         {
           title: "Mail",
