@@ -75,7 +75,7 @@ export const translations = {
         },
         {
           title: "Mail",
-          description: "A social networking platform with user profiles, posts, comments, and real-time notifications",
+          description: "A single-page internal email application that uses JavaScript and APIs to manage messages without reloading the browser. It allows users to register, compose emails, filter by phrases, and manage inboxes, sent items, and archived messages. It includes features for replying and viewing detailed content, all within a responsive interface.",
         },
         {
           title: "Wiki",
@@ -186,7 +186,7 @@ export const translations = {
         },
         {
           title: "Mail",
-          description: "Una plataforma de redes sociales con perfiles de usuario, publicaciones, comentarios y notificaciones en tiempo real",
+          description: "Single-page application de correo interno que utiliza JavaScript y APIs para gestionar mensajes sin recargar el navegador. Permite registrarse, redactar correos, filtrar por frases y administrar bandejas de entrada, enviados o archivados. Incluye funciones para responder y visualizar contenido detallado, todo bajo una interfaz responsiva.",
         },
         {
           title: "Wiki",
