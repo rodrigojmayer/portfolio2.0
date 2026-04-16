@@ -121,7 +121,7 @@ export const projects = [
     },
     {
       image: "/networkimage12.png",
-      tags: ["Python", "Django", "Java Script"],
+      tags: ["Python", "Django", "Java Script", "HTML", "CSS"],
       github: "https://github.com/rodrigojmayer/RJMNetwork",
       demo: "https://rjmnetwork.onrender.com/",
       slug: 'network',
@@ -273,8 +273,8 @@ export const projects = [
     {
       image: "/wikiimage5.png",
       tags: ["Next.js", "Supabase", "Tailwind", "Vercel"],
-      github: "#",
-      demo: "#",
+      github: "https://github.com/rodrigojmayer/wiki3.0",
+      demo: "https://wiki3-0-0yba.onrender.com/",
       slug: 'wiki',
       videos: [
         { src: '01-Index_page',
