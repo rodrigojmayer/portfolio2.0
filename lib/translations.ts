@@ -99,6 +99,8 @@ export const translations = {
         message: "Message",
         messagePlaceholder: "Tell me about your project...",
         send: "Send Message",
+        success: "Thank you for your message!",
+        error: "An error occurred. Please try again.",
       },
     },
     footer: {
@@ -210,6 +212,8 @@ export const translations = {
         message: "Mensaje",
         messagePlaceholder: "Cuéntame sobre tu proyecto...",
         send: "Enviar Mensaje",
+        success: "¡Gracias por tu mensaje!",
+        error: "Ocurrió un error. Intenta de nuevo.",
       },
     },
     footer: {

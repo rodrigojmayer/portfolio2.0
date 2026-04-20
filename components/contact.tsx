@@ -146,10 +146,10 @@ export function Contact() {
                 {loading ? "Enviando..." : t.contact.form.send}
               </Button>
               {status === 'success' && (
-                <p className="text-green-500">¡Gracias por tu mensaje!</p>
+                <p className="text-green-500">{t.contact.form.success}</p>
               )}
               {status === 'error' && (
-                <p className="text-red-500">Ocurrió un error. Intenta de nuevo.</p>
+                <p className="text-red-500">{t.contact.form.error}</p>
               )}
             </form>
           </Card>
