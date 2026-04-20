@@ -21,10 +21,43 @@ export function Contact() {
     email: "",
     message: "",
   })
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState<null | 'success' | 'error'>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    console.log("[v0] Form submitted:", formData)
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+    setStatus(null);
+
+    // 1. Creamos el objeto FormData
+    const data = new FormData();
+    data.append("name", formData.name);
+    data.append("email", formData.email);
+    data.append("message", formData.message); // Asegurate que coincida con lo que esperas recibir
+
+    try {
+      const res = await fetch("https://formsubmit.co/ajax/rodrigojmayer@gmail.com", {
+        method: "POST",
+        body: data,
+      });
+
+      if (res.ok) {
+        setStatus('success');
+        setFormData({ name: '', email: '', message: '' }); // Limpiamos el formulario
+      } else {
+        throw new Error("Error al enviar");
+      }
+    } catch (err) {
+      console.error(err);
+      setStatus('error');
+    } finally {
+      setLoading(false);
+      // Opcional: Ocultar el mensaje de exito despues de unos segundos
+      if (status === 'success') {
+        setTimeout(() => setStatus(null), 3000);
+      }
+    }
+    // console.log("[v0] Form submitted:", formData)
     // Handle form submission
   }
 
@@ -109,9 +142,15 @@ export function Contact() {
                   required
                 />
               </div>
-              <Button type="submit" size="lg" className="w-full md:w-auto cursor-pointer">
-                {t.contact.form.send}
+              <Button type="submit" disabled={loading} size="lg" className="w-full md:w-auto cursor-pointer">
+                {loading ? "Enviando..." : t.contact.form.send}
               </Button>
+              {status === 'success' && (
+                <p className="text-green-500">¡Gracias por tu mensaje!</p>
+              )}
+              {status === 'error' && (
+                <p className="text-red-500">Ocurrió un error. Intenta de nuevo.</p>
+              )}
             </form>
           </Card>
         </div>
