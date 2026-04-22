@@ -55,6 +55,13 @@ export const translations = {
       close: "Close",
       items: [
         {
+          title: "cuentasclaras",
+          description:
+            "Web application for managing inventory with advanced stock control features. It allows users to create, update, and organize products, manage quantities individually or in bulk, set alerts by amount or date, and customize views with filters, sorting, and custom fields, along with user access control and multilingual support."
+            // "A versatile stock control tool designed for individuals and businesses. It offers customizable features for efficient inventory management, user-specific access levels and multilingual.",
+            // "A full-featured e-commerce platform with payment integration, inventory management, and admin dashboard",
+        },
+        {
           title: "StockPro",
           description:
             "Web application for managing inventory with advanced stock control features. It allows users to create, update, and organize products, manage quantities individually or in bulk, set alerts by amount or date, and customize views with filters, sorting, and custom fields, along with user access control and multilingual support."
@@ -169,6 +176,11 @@ export const translations = {
       demo: "Demo",
       close: "Cerrar",
       items: [
+        {
+          title: "cuentasclaras",
+          description: `Aplicación web para la gestión de inventario con funciones avanzadas de control de existencias. Permite a los usuarios crear, actualizar y organizar productos, gestionar cantidades de forma individual o masiva, configurar alertas por importe o fecha, y personalizar las vistas con filtros, ordenación y campos personalizados, control de acceso de usuarios y soporte multilingüe.`,
+            // "Una plataforma de comercio electrónico completa con integración de pagos, gestión de inventario y panel de administración",
+        },
         {
           title: "StockPro",
           description: `Aplicación web para la gestión de inventario con funciones avanzadas de control de existencias. Permite a los usuarios crear, actualizar y organizar productos, gestionar cantidades de forma individual o masiva, configurar alertas por importe o fecha, y personalizar las vistas con filtros, ordenación y campos personalizados, control de acceso de usuarios y soporte multilingüe.`,
