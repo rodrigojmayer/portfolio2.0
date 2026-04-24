@@ -1,16 +1,16 @@
 export const projects = [
-    // {
-    //   image: "/public/analytics-dashboard.png",
-    //   tags: ["React.js", "TypeScript", "Node.js", "MongoDB"],
-    //   github: "https://github.com/rodrigojmayer/stockpro",
-    //   demo: 'https://stockpro-deploy.onrender.com/',
-    //   slug: 'cuentasclaras',
-    //   videos: [
-    //     { src: '01-Main-page',
-    //       title: { es: 'Página principal sin inicio de sesión', en: 'Main page unlogged' },
-    //     },
-    //   ],
-    // },
+    {
+      image: "/public/analytics-dashboard.png",
+      tags: ["React.js", "TypeScript", "Node.js", "MongoDB"],
+      github: "https://github.com/rodrigojmayer/stockpro",
+      demo: 'https://stockpro-deploy.onrender.com/',
+      slug: 'cuentasclaras',
+      videos: [
+        { src: '01-Main-page',
+          title: { es: 'Página principal sin inicio de sesión', en: 'Main page unlogged' },
+        },
+      ],
+    },
     {
       image: "/Great-stock-pro-image-show3.png",
       tags: ["React.js", "TypeScript", "Node.js", "MongoDB"],
