@@ -54,11 +54,11 @@ export const translations = {
       demo: "Demo",
       close: "Close",
       items: [
-        {
-          title: "Cuentas Claras",
-          description:
-            "Web application for managing inventory with advanced stock control features. It allows users to create, update, and organize products, manage quantities individually or in bulk, set alerts by amount or date, and customize views with filters, sorting, and custom fields, along with user access control and multilingual support."
-       },
+      //   {
+      //     title: "Cuentas Claras",
+      //     description:
+      //       "Web application for managing inventory with advanced stock control features. It allows users to create, update, and organize products, manage quantities individually or in bulk, set alerts by amount or date, and customize views with filters, sorting, and custom fields, along with user access control and multilingual support."
+      //  },
         {
           title: "StockPro",
           description:
@@ -174,10 +174,10 @@ export const translations = {
       demo: "Demo",
       close: "Cerrar",
       items: [
-        {
-          title: "Cuentas Claras",
-          description: `Aplicación web para la gestión de inventario con funciones avanzadas de control de existencias. Permite a los usuarios crear, actualizar y organizar productos, gestionar cantidades de forma individual o masiva, configurar alertas por importe o fecha, y personalizar las vistas con filtros, ordenación y campos personalizados, control de acceso de usuarios y soporte multilingüe.`,
-        },
+        // {
+        //   title: "Cuentas Claras",
+        //   description: `Aplicación web para la gestión de inventario con funciones avanzadas de control de existencias. Permite a los usuarios crear, actualizar y organizar productos, gestionar cantidades de forma individual o masiva, configurar alertas por importe o fecha, y personalizar las vistas con filtros, ordenación y campos personalizados, control de acceso de usuarios y soporte multilingüe.`,
+        // },
         {
           title: "StockPro",
           description: `Aplicación web para la gestión de inventario con funciones avanzadas de control de existencias. Permite a los usuarios crear, actualizar y organizar productos, gestionar cantidades de forma individual o masiva, configurar alertas por importe o fecha, y personalizar las vistas con filtros, ordenación y campos personalizados, control de acceso de usuarios y soporte multilingüe.`,
