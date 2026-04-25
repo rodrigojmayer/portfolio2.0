@@ -4,6 +4,9 @@ import { Geist, Geist_Mono, Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import { AppProvider } from "@/lib/context"
+// Importa tus componentes
+import { ThemeProvider } from "@/components/theme-provider"
+import { Toaster } from "@/components/ui/sonner"
 
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
@@ -38,10 +41,21 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`font-sans antialiased`}>
-        <AppProvider>{children}</AppProvider>
-        <Analytics />
+        {/* 2. Envuelve todo en el ThemeProvider */}
+        <ThemeProvider 
+          attribute="class" 
+          defaultTheme="system" 
+          enableSystem 
+          disableTransitionOnChange
+        >
+          <AppProvider>
+            {children}
+            <Toaster /> {/* Incluye tu Toaster aquí */}
+          </AppProvider>
+          <Analytics />
+        </ThemeProvider>
         <div className="fixed bottom-6 right-6 z-50">
           <a 
             href="https://wa.me/5493412612996" 
