@@ -5,13 +5,14 @@ import { Button } from "@/components/ui/button"
 import { Menu, X, Sun, Moon, Globe } from "lucide-react"
 import { useApp } from "@/lib/context"
 import { translations } from "@/lib/translations"
+import { useTheme } from "next-themes"; // Importa esto
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const { language, setLanguage, theme, toggleTheme } = useApp()
+  const { language, setLanguage } = useApp()
   const t = translations[language]
-
+  const { resolvedTheme, setTheme } = useTheme(); // Usa esto en lugar de useApp para el tema   
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50)
@@ -71,8 +72,11 @@ export function Navigation() {
               ))}
             </div>
             </div>
-            <Button variant="ghost" size="icon" onClick={toggleTheme} className="ml-2  cursor-pointer">
-              {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+            {/* <Button variant="ghost" size="icon" onClick={toggleTheme} className="ml-2  cursor-pointer"> */}
+            <Button variant="ghost" size="icon" 
+              onClick={()=>setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+              className="ml-2  cursor-pointer">
+              {resolvedTheme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
             </Button>
             <Button variant="ghost"  onClick={() => setLanguage(language === "en" ? "es" : "en")} className="cursor-pointer">
               <Globe className="h-5 w-5" />
@@ -110,9 +114,13 @@ export function Navigation() {
               </a>
             ))}
             <div className="flex gap-2 pt-2 border-t border-border">
-              <Button variant="outline" size="sm" onClick={toggleTheme} className="flex-1 bg-transparent">
-                {theme === "dark" ? <Sun className="h-4 w-4 mr-2" /> : <Moon className="h-4 w-4 mr-2" />}
-                {theme === "dark" ? "Light" : "Dark"}
+              <Button variant="outline" size="sm" 
+              // onClick={toggleTheme}
+              onClick={()=>setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+              
+               className="flex-1 bg-transparent">
+                {resolvedTheme === "dark" ? <Sun className="h-4 w-4 mr-2" /> : <Moon className="h-4 w-4 mr-2" />}
+                {resolvedTheme === "dark" ? "Light" : "Dark"}
               </Button>
               <Button
                 variant="outline"
