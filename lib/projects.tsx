@@ -1,6 +1,6 @@
 export const projects = [
     {
-      image: "/public/analytics-dashboard.png",
+      image: "/cuentasclarasHeroImage2.png",
       tags: ["React.js", "TypeScript", "Node.js", "MongoDB"],
       github: "https://github.com/rodrigojmayer/stockpro",
       demo: 'https://stockpro-deploy.onrender.com/',

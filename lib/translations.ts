@@ -57,7 +57,7 @@ export const translations = {
         {
           title: "Cuentas Claras",
           description:
-            "Web application for managing inventory with advanced stock control features. It allows users to create, update, and organize products, manage quantities individually or in bulk, set alerts by amount or date, and customize views with filters, sorting, and custom fields, along with user access control and multilingual support."
+            "A web application for managing loans and debts with detailed control of financial transactions. It allows users to register loans, manage due dates, view histories by user, and see the status of each debt (active, paid, or overdue). It includes individual profiles, the ability to upload new transactions, data editing, and an authentication system for secure access."
        },
         {
           title: "StockPro",
@@ -176,7 +176,7 @@ export const translations = {
       items: [
         {
           title: "Cuentas Claras",
-          description: `Aplicación web para la gestión de inventario con funciones avanzadas de control de existencias. Permite a los usuarios crear, actualizar y organizar productos, gestionar cantidades de forma individual o masiva, configurar alertas por importe o fecha, y personalizar las vistas con filtros, ordenación y campos personalizados, control de acceso de usuarios y soporte multilingüe.`,
+          description: `Aplicación web para la gestión de préstamos y deudas con control detallado de operaciones financieras. Permite registrar préstamos, administrar vencimientos, consultar historiales por usuario y visualizar el estado de cada deuda (activa, saldada o vencida). Incluye perfiles individuales, carga de nuevas operaciones, edición de datos y sistema de autenticación para un acceso seguro.`,
         },
         {
           title: "StockPro",
