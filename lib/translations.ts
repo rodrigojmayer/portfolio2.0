@@ -57,7 +57,7 @@ export const translations = {
         {
           title: "Cuentas Claras",
           description:
-            "A web application for managing loans and debts with detailed control of financial transactions. It allows users to register loans, manage due dates, view histories by user, and see the status of each debt (active, paid, or overdue). It includes individual profiles, the ability to upload new transactions, data editing, and an authentication system for secure access."
+            "Digital tool for managing loans and debts with detailed control of financial transactions. It allows users to register loans, manage due dates, view histories by user, and see the status of each debt (active, paid, or overdue). It includes individual profiles, the ability to upload new transactions, data editing, and an authentication system for secure access."
        },
         {
           title: "StockPro",
@@ -176,7 +176,7 @@ export const translations = {
       items: [
         {
           title: "Cuentas Claras",
-          description: `Aplicación web para la gestión de préstamos y deudas con control detallado de operaciones financieras. Permite registrar préstamos, administrar vencimientos, consultar historiales por usuario y visualizar el estado de cada deuda (activa, saldada o vencida). Incluye perfiles individuales, carga de nuevas operaciones, edición de datos y sistema de autenticación para un acceso seguro.`,
+          description: `Herramienta digital para la gestión de préstamos y deudas con control detallado de operaciones financieras. Permite registrar préstamos, administrar vencimientos, consultar historiales por usuario y visualizar el estado de cada deuda (activa, saldada o vencida). Incluye perfiles individuales, carga de nuevas operaciones, edición de datos y sistema de autenticación para un acceso seguro.`,
         },
         {
           title: "StockPro",
