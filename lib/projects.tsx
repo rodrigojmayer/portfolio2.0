@@ -2,8 +2,8 @@ export const projects = [
     {
       image: "/cuentasclarasHeroImage2.png",
       tags: ["React.js", "TypeScript", "Node.js", "MongoDB"],
-      github: "https://github.com/rodrigojmayer/stockpro",
-      demo: 'https://stockpro-deploy.onrender.com/',
+      github: "https://github.com/rodrigojmayer/cuentas_claras_frontend",
+      demo: 'https://cuentas-claras-frontend.vercel.app/',
       slug: 'cuentasclaras',
       videos: [
         { src: '01-Main-page',
