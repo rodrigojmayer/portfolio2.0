@@ -31,7 +31,7 @@ export const metadata: Metadata = {
       },
       {
         // url: "/icon.svg",
-        url: "/fullstack-icon-dark-32x32png",
+        url: "/fullstack-icon-dark-32x32.png",
         type: "image/svg+xml",
       },
     ],
