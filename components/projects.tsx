@@ -13,9 +13,13 @@ import { useState, useEffect } from "react"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Navigation, Pagination, EffectCoverflow } from "swiper/modules"
 
+// @ts-ignore: Swiper CSS side-effect import type declarations are not available in this TS setup
 import "swiper/css"
+// @ts-ignore: Swiper CSS side-effect import type declarations are not available in this TS setup
 import "swiper/css/navigation"
+// @ts-ignore: Swiper CSS side-effect import type declarations are not available in this TS setup
 import "swiper/css/pagination"
+// @ts-ignore: Swiper CSS side-effect import type declarations are not available in this TS setup
 import "swiper/css/effect-coverflow"
 
 export function Projects() {
@@ -160,14 +164,14 @@ export function Projects() {
                         {activeProject.title}
                       </h2>
                       {/* CONTENT */}
-                      <div className="grid grid-cols-3 gap-10 flex-1 items-center">
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10 flex-1 items-center">
                         {/* LEFT SIDE */}
-                        <div className="col-span-1 flex flex-col justify-center">
-                          <p className="text-muted-foreground mb-6 text-lg leading-relaxed">
+                        <div className="col-span-1 flex flex-col justify-center text-center md:text-left">
+                          <p className="text-muted-foreground mb-6 text-base md:text-lg leading-relaxed">
                             {activeProject.description}
                           </p>
 
-                          <div className="flex flex-wrap gap-2">
+                          <div className="flex flex-wrap gap-2 justify-center md:justify-start">
                             {activeProject.tags.map((tag, i) => (
                               <Badge key={i}>{tag}</Badge>
                             ))}
@@ -175,8 +179,7 @@ export function Projects() {
                         </div>
 
                         {/* RIGHT SIDE */}
-                        <div className="col-span-2 w-full h-full flex flex-col items-center justify-center">
-                          {/* <video
+                        <div className="col-span-1 md:col-span-2 w-full h-full flex flex-col items-center justify-center min-h-[300px]">                          {/* <video
                             // src="/StockPro/01-Main-page.webm"
                             src={activeProject.video}
                             controls
@@ -338,7 +341,7 @@ export function Projects() {
                                             <div className="absolute inset-0 flex items-center justify-center z-20 bg-black/20 rounded-xl transition-opacity">
                                               <button 
                                                 onClick={handleReplay}
-                                                className="bg-black/70 hover:bg-black/50 p-4 rounded-full backdrop-blur-md border border-white/50 transition-all transform hover:scale-110 cursor-pointer"
+                                                className="bg-black/70 hover:bg-black/50 md:p-4 rounded-full backdrop-blur-md border border-white/50 transition-all transform hover:scale-110 cursor-pointer"
                                                 title="Replay"
                                               >
                                                 <svg 
@@ -376,7 +379,7 @@ export function Projects() {
                             </button>
 
                             {/* BULLETS */}
-                            <div className="swiper-pagination-custom flex items-center"></div>
+                            <div className="swiper-pagination-custom flex items-center justify-center gap-2"></div>
 
                             {/* RIGHT ARROW */}
                             <button className="swiper-button-next-custom px-3 py-2 rounded-lg cursor-pointer">
