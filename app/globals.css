@@ -214,3 +214,24 @@ html {
 .swiper-wrapper {
   pointer-events: none;
 }
+
+/* Contenedor de los puntos */
+.swiper-pagination-custom {
+  display: flex !important;
+  flex-wrap: wrap !important; /* Permite que bajen si no hay espacio */
+  justify-content: center;
+  gap: 8px; /* Espacio entre puntos */
+  max-width: 100%; /* No permite que se desborde del ancho del modal */
+  padding: 0 10px;
+}
+
+/* Estilo de cada bullet individual */
+.swiper-pagination-custom .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: var(--primary); /* O el color que prefieras */
+  opacity: 0.5;
+  transition: all 0.3s ease;
+  margin: 0 !important; /* Reseteamos márgenes de Swiper para usar el gap */
+}
+
