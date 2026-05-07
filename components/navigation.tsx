@@ -10,9 +10,13 @@ import { useTheme } from "next-themes"; // Importa esto
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [mounted, setMounted] = useState(false) 
   const { language, setLanguage } = useApp()
   const t = translations[language]
-  const { resolvedTheme, setTheme } = useTheme(); // Usa esto en lugar de useApp para el tema   
+  const { resolvedTheme, setTheme } = useTheme(); // Usa esto en lugar de useApp para el tema  
+  
+  useEffect(() => setMounted(true), [])      
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50)
@@ -20,6 +24,8 @@ export function Navigation() {
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
+
+  const isDark = mounted && resolvedTheme === "dark" 
 
   const navLinks = [
     { href: "#home", label: t.nav.home },
@@ -73,10 +79,15 @@ export function Navigation() {
             </div>
             </div>
             {/* <Button variant="ghost" size="icon" onClick={toggleTheme} className="ml-2  cursor-pointer"> */}
-            <Button variant="ghost" size="icon" 
+            <Button 
+              variant="ghost" 
+              size="icon" 
               onClick={()=>setTheme(resolvedTheme === "dark" ? "light" : "dark")}
-              className="ml-2  cursor-pointer">
-              {resolvedTheme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+              className="ml-2  
+              cursor-pointer"
+            >
+              {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+              {/* {resolvedTheme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />} */}
             </Button>
             <Button variant="ghost"  onClick={() => setLanguage(language === "en" ? "es" : "en")} className="cursor-pointer">
               <Globe className="h-5 w-5" />
@@ -119,7 +130,8 @@ export function Navigation() {
               onClick={()=>setTheme(resolvedTheme === "dark" ? "light" : "dark")}
               
                className="flex-1 bg-transparent">
-                {resolvedTheme === "dark" ? <Sun className="h-4 w-4 mr-2" /> : <Moon className="h-4 w-4 mr-2" />}
+                {/* {resolvedTheme === "dark" ? <Sun className="h-4 w-4 mr-2" /> : <Moon className="h-4 w-4 mr-2" />} */}
+                {isDark ? <Sun className="h-4 w-4 mr-2" /> : <Moon className="h-4 w-4 mr-2" />}
                 {resolvedTheme === "dark" ? "Light" : "Dark"}
               </Button>
               <Button
